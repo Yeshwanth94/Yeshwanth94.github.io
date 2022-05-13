@@ -14,7 +14,9 @@ You can find a link to my resume [docs/resume.pdf here].
 ~~~
 
 == Publications
-- *Uniform Approximations for Randomized Hadamard Transforms with Applications* \n Yeshwanth Cherapanamjeri, Jelani Nelson \n STOC 2022
+- *What Makes A Good Fisherman? Linear Regression under Self-Selection Bias* \n Yeshwanth Cherapanamjeri, Constantinos Daskalakis, Andrew Ilyas, Manolis Zampetakis \n /In Submission/ \[[https://arxiv.org/abs/2205.03246 ArXiv]\]
+- *Estimation of Standard Auction Models* \n Yeshwanth Cherapanamjeri, Constantinos Daskalakis, Andrew Ilyas, Manolis Zampetakis \n /In Submission/ \[[https://arxiv.org/abs/2205.02060 ArXiv]\]
+- *Uniform Approximations for Randomized Hadamard Transforms with Applications* \n Yeshwanth Cherapanamjeri, Jelani Nelson \n STOC 2022 \[[https://arxiv.org/abs/2203.01599 ArXiv]\]
 - *Terminal Embeddings in Sublinear Time* \n Yeshwanth Cherapanamjeri, Jelani Nelson \n FOCS 2021 \[[https://arxiv.org/abs/2110.08691 ArXiv]\]
 - *Adversarial Examples in Multi-Layer Random ReLU Networks* \n Peter L. Bartlett, S{{&eacute;}}bastien Bubeck, Yeshwanth Cherapanamjeri \n NeurIPS 2021 \[[https://arxiv.org/abs/2106.12611 ArXiv]\]
 - *A single gradient step finds adversarial examples on random two-layers neural networks
