@@ -11,11 +11,14 @@
 I am a fifth year Ph.D candidate in Computer Science at UC Berkeley advised by [https://www.stat.berkeley.edu/~bartlett/ Peter Bartlett]. I'm broadly interested in algorithmic and statistical issues arising in machine learning. Before this, I'd spent two wonderful years as a research fellow in the Machine Learning & Optimization group at Microsoft Research, India, where I was fortunate to work with [https://www.microsoft.com/en-us/research/people/prajain/ Prateek Jain], [https://www.microsoft.com/en-us/research/people/praneeth/ Praneeth Netrapalli] and Nagarajan Natarajan on designing provable algorithms for non-convex optimization. Previously, I received a B. Tech in Computer Science from IIT Bombay where I worked on Entity Linking and Disambiguation with [https://www.cse.iitb.ac.in/~ganesh/ Prof. Ganesh Ramakrishnan] and [https://www.cse.iitb.ac.in/~soumen/ Prof. Soumen Chakrabarti] for my undergraduate thesis.
 \n \n
 You can find a link to my resume [docs/resume.pdf here].
+\n \n
+I am on the 2022-2023 academic job market.
 ~~~
 
 == Publications
+- *Optimal Algorithms for Linear Algebra in the Current Matrix Multiplication Time* \n Yeshwanth Cherapanamjeri, Sandeep Silwal, David P. Woodruff, Samson Zhou \n SODA 2023 \[[https://arxiv.org/abs/2205.03246 ArXiv]\]
 - *What Makes A Good Fisherman? Linear Regression under Self-Selection Bias* \n Yeshwanth Cherapanamjeri, Constantinos Daskalakis, Andrew Ilyas, Manolis Zampetakis \n /In Submission/ \[[https://arxiv.org/abs/2205.03246 ArXiv]\]
-- *Estimation of Standard Auction Models* \n Yeshwanth Cherapanamjeri, Constantinos Daskalakis, Andrew Ilyas, Manolis Zampetakis \n /In Submission/ \[[https://arxiv.org/abs/2205.02060 ArXiv]\]
+- *Estimation of Standard Auction Models* \n Yeshwanth Cherapanamjeri, Constantinos Daskalakis, Andrew Ilyas, Manolis Zampetakis \n Extended Abstract at EC 2022 \[[https://arxiv.org/abs/2205.02060 ArXiv]\]
 - *Uniform Approximations for Randomized Hadamard Transforms with Applications* \n Yeshwanth Cherapanamjeri, Jelani Nelson \n STOC 2022 \[[https://arxiv.org/abs/2203.01599 ArXiv]\]
 - *Terminal Embeddings in Sublinear Time* \n Yeshwanth Cherapanamjeri, Jelani Nelson \n FOCS 2021 \[[https://arxiv.org/abs/2110.08691 ArXiv]\]
 - *Adversarial Examples in Multi-Layer Random ReLU Networks* \n Peter L. Bartlett, S{{&eacute;}}bastien Bubeck, Yeshwanth Cherapanamjeri \n NeurIPS 2021 \[[https://arxiv.org/abs/2106.12611 ArXiv]\]
@@ -24,7 +27,7 @@ You can find a link to my resume [docs/resume.pdf here].
 - *On Adaptive Distance Estimation* \n Yeshwanth Cherapanamjeri, Jelani Nelson \n NeurIPS 2020 (Spotlight) \[[https://arxiv.org/abs/2010.11252 ArXiv]\]
 - *Optimal Robust Linear Regression in Nearly Linear Time* \n Yeshwanth Cherapanamjeri, Efe Aras, Nilesh Tripuraneni, Michael I. Jordan, Nicolas Flammarion, Peter L. Bartlett \n /In Submission/ \[[https://arxiv.org/abs/2007.08137 ArXiv]\]
 - *List Decodable Mean Estimation in Nearly Linear Time* \n Yeshwanth Cherapanamjeri, Sidhanth Mohanty, Morris Yau\n FOCS 2020 \[[https://arxiv.org/abs/2005.09796 ArXiv]\]
-- *Optimal Mean Estimation without a Covariance* \n Yeshwanth Cherapanamjeri, Nilesh Tripuraneni, Peter L. Bartlett, Michael I. Jordan\n /In Submission/ \[[https://arxiv.org/abs/2011.12433 ArXiv]\]
+- *Optimal Mean Estimation without a Variance* \n Yeshwanth Cherapanamjeri, Nilesh Tripuraneni, Peter L. Bartlett, Michael I. Jordan\n Extended Abstract at COLT 2022 \[[https://arxiv.org/abs/2011.12433 ArXiv]\]
 - *Algorithms for Heavy-Tailed Statistics: Regression, Covariance Estimation, and Beyond* \n Yeshwanth Cherapanamjeri, Samuel B. Hopkins, Tarun Kathuria, Prasad Raghavendra, Nilesh Tripuraneni\n STOC 2020 \[[https://arxiv.org/abs/1912.11071 ArXiv]\]
 - *Fast Mean Estimation with Sub-Gaussian Rates* \n Yeshwanth Cherapanamjeri, Nicolas Flammarion, Peter L. Bartlett\n COLT 2019 \[[https://arxiv.org/abs/1902.01998 ArXiv]\]
 - *Testing Markov Chains without Hitting* \n Yeshwanth Cherapanamjeri, Peter L. Bartlett\n COLT 2019 \[[https://arxiv.org/abs/1902.01999 ArXiv]\]
