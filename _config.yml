@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 title: Yeshwanth Cherapanamjeri
 logo: /assets/prof_pic.jpg
+github:
+  is_project_page: false
