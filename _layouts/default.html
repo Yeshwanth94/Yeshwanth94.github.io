@@ -21,6 +21,12 @@
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
+        {% if site.email %}
+          <div class="email">
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          </div>
+        {% endif %}
+
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
         {% if site.github.is_project_page %}
