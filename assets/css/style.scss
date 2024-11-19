@@ -9,11 +9,17 @@ img {
 
 .wrapper {
   width:1500px;
-  margin:0 auto;
+  margin:100px auto;
+}
+
+section {
+  width:750px;
+  float:left;
+  padding-bottom:50px;
 }
 
 header {
-  width:360px;
-  padding-right: 50px;
+  width:380px;
+  float: right;
 }
 
