@@ -1,10 +1,12 @@
 <div class="publication-item">
-<strong>{{ item.title }}</strong><br>
+{% if item.abbr %}
+<div class="abbr">{{- item.abbr -}}{% if item.year %}{{" "}}{{ item.year }}{% endif %}</div>
+{% endif %}<strong>{{- item.title -}}</strong><br>
 <div class="author-names">{% if item.authors %}
 {{- item.authors -}}<br>
 {% else %}
 {%- include author-names.liquid -%}<br>
-{% endif %}</div><em>
+{% endif %}<em>
 {%- if item.under_prep %}{{- "Under Preparation" -}}<br>
 {% elsif item.under_sub %}{{- "Under Submission" -}}<br>
 {% elsif item.under_major_rev %}{{- "Under Major Revision" -}}
@@ -12,10 +14,15 @@
 {% elsif item.abbr %}{{- " at " -}}{{- item.abbr -}}
 {% endif %}
 <br>
+{% else %}
+{{- item.venue -}}<br>
 {% endif %}
 </em>
+{% if item.note %}
+{{- item.note -}}
+{% endif %}</div>
 {%- if item.arxiv -%}
-<a href="https://arxiv.org" class="arxiv-button-link" target="_blank">
+<a href="http://arxiv.org/abs/{{ item.arxiv }}" class="arxiv-button-link">
     <button class="arxiv-button"></button>
 </a>
 {% endif %}

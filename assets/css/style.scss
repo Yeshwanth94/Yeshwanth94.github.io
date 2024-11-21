@@ -66,7 +66,7 @@ a {
 a:hover,
 a:focus {
   color: rgb(56, 43, 107);
-  font-weight: bold;
+  font-weight: 500px;
 }
 
 a small {
@@ -81,7 +81,7 @@ a:hover small {
 }
 
 .wrapper {
-  width: 860px;
+  width: 870px;
   margin: 0 auto;
 }
 
@@ -156,7 +156,7 @@ kbd {
 }
 
 header {
-  width: 300px;
+  width: 340px;
   float: left;
   position: fixed;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -343,6 +343,7 @@ footer {
   text-shadow: none;
   color: rgb(183, 13, 56);
   width: 4rem;
+  font-family: "Roboto", sans-serif;
 
   &::before {
     content: "arXiv"; // Specifies the text to be inserted
@@ -362,6 +363,7 @@ footer {
   text-shadow: none;
   color: rgb(183, 13, 56);
   width: 4rem;
+  font-family: "Roboto", sans-serif;
 
   &::before {
     content: "ABS";
@@ -389,6 +391,14 @@ footer {
   font-size: 13px !important;
 }
 
-.MathJax_Display {
-  font-size: 1.5em !important;
+.abbr {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  // font-weight: 600;
+  // background-color: #fff93de7;
+  // background-color: rgb(255, 255, 223);
+  background-color: rgba(198, 14, 60, 0.203);
+  width: fit-content;
+  color: #212121;
+  padding: 1px 5px 1px 5px;
 }
