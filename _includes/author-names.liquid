@@ -1,0 +1,11 @@
+{% assign author_names = "" %}
+{% for author in item.author %}
+{% if forloop.first %}
+{% assign author_names = author.given | append: " " | append: author.family %}
+{% comment %} {% elsif forloop.last %}
+{% assign author_names = author_names | append: " and " | append: author.given | append: " " | append: author.family %} {% endcomment %}
+{% else %}
+{% assign author_names = author_names | append: ", " | append: author.given | append: " " | append: author.family %}
+{% endif %}
+{% endfor %}
+{{- author_names }}

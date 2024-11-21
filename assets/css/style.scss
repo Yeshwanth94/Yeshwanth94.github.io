@@ -333,3 +333,45 @@ footer {
     color: #444;
   }
 }
+
+.arxiv-button {
+  background-color: #c9c8c8;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #6d6d6d;
+  font-weight: 500;
+  box-shadow: none;
+  text-shadow: none;
+  color: rgb(183, 13, 56);
+  width: 4rem;
+
+  &::before {
+    content: "arXiv"; // Specifies the text to be inserted
+  }
+
+  &:hover {
+    color: rgb(56, 43, 107);
+    font-weight: bold;
+  }
+}
+
+.abs-button {
+  background-color: #c9c8c8;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #6d6d6d;
+  font-weight: 500;
+  box-shadow: none;
+  text-shadow: none;
+  color: rgb(183, 13, 56);
+  width: 4rem;
+
+  &::before {
+    content: "ABS"; // Specifies the text to be inserted
+  }
+
+  &:hover {
+    color: rgb(56, 43, 107);
+    font-weight: bold;
+  }
+}

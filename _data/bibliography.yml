@@ -1,0 +1,61 @@
+# bibliography.yml
+
+# - title: "The Great Gatsby"
+#   author: "F. Scott Fitzgerald"
+#   year: 1925
+#   publisher: "Scribner"
+#   url: "https://www.example.com/the-great-gatsby"
+
+# - title: "To Kill a Mockingbird"
+#   author: "Harper Lee"
+#   year: 1960
+#   publisher: "J.B. Lippincott & Co."
+#   url: "https://www.example.com/to-kill-a-mockingbird"
+
+- id: "cherapanamjeri2025are"
+  title: "Are Pairwise Comparisions Enough for Preference Learning?"
+  author:
+    - family: "Cherapanamjeri\\*"
+      given: "Yeshwanth"
+    - family: "Daskalakis"
+      given: "Constantinos"
+    - family: "Farina"
+      given: "Gabriele"
+    - family: "Mohammadpour\\*"
+      given: "Sobhan"
+  under_prep: true
+  selected: true
+
+- id: "daras2025how"
+  title: "How Much is a Noisy Image Worth? Data Scaling Laws for Ambient Diffusion"
+  author:
+    - given: "Giannis"
+      family: "Daras*"
+    - given: "Yeshwanth"
+      family: "Cherapanamjeri\\*"
+    - given: "Constantinos"
+      family: "Daskalakis"
+  under_sub: true
+  selected: true
+
+- id: "cherapanamjeri2025heavy"
+  author:
+    - given: "Yeshwanth"
+      family: "Cherapanamjeri"
+    - given: "Daniel"
+      family: "Lee"
+  title: "Heavy-tailed Estimation is Easier than Adversarial Contamination"
+  under_sub: true
+
+- id: chen2025statistical
+  author:
+    - given: "Zihao"
+      family: "Chen"
+    - given: "Yeshwanth"
+      family: "Cherapanamjeri"
+  title: "Statistical Barriers to Affine-equivariant Estimation"
+  venue: "Annals of Statistics"
+  selected: true
+  under_major_rev: true
+  arxiv: "2310.10758"
+  abstract: "I know a republican"
