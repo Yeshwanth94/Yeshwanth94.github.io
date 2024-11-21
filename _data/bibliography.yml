@@ -15,13 +15,13 @@
 - id: "cherapanamjeri2025are"
   title: "Are Pairwise Comparisions Enough for Preference Learning?"
   author:
-    - family: "Cherapanamjeri\\*"
+    - family: "Cherapanamjeri*"
       given: "Yeshwanth"
     - family: "Daskalakis"
       given: "Constantinos"
     - family: "Farina"
       given: "Gabriele"
-    - family: "Mohammadpour\\*"
+    - family: "Mohammadpour*"
       given: "Sobhan"
   under_prep: true
   selected: true
@@ -32,7 +32,7 @@
     - given: "Giannis"
       family: "Daras*"
     - given: "Yeshwanth"
-      family: "Cherapanamjeri\\*"
+      family: "Cherapanamjeri*"
     - given: "Constantinos"
       family: "Daskalakis"
   under_sub: true
@@ -46,6 +46,19 @@
       family: "Lee"
   title: "Heavy-tailed Estimation is Easier than Adversarial Contamination"
   under_sub: true
+
+- id: chen2025statistical
+  author:
+    - given: "Zihao"
+      family: "Chen"
+    - given: "Yeshwanth"
+      family: "Cherapanamjeri"
+  title: "Statistical Barriers to Affine-equivariant Estimation"
+  venue: "Annals of Statistics"
+  selected: true
+  under_major_rev: true
+  arxiv: "2310.10758"
+  abstract: "I know a republican"
 
 - id: chen2025statistical
   author:

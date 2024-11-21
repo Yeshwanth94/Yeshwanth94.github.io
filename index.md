@@ -2,7 +2,14 @@ I am a postdoc at MIT where I am mentored by [Costis Daskalakis](https://people.
 
 Before this, I'd spent two wonderful years as a research fellow in the Machine Learning & Optimization group at Microsoft Research, India, where I was fortunate to work with [Prateek Jain](https://www.prateekjain.org), [Praneeth Netrapalli](https://praneethnetrapalli.org/) and [Nagarajan Natarajan](https://www.microsoft.com/en-us/research/people/nagarajn/) on designing provable algorithms for non-convex optimization. Previously, I received a B. Tech in Computer Science from IIT Bombay where I worked on Entity Linking and Disambiguation with [Prof. Ganesh Ramakrishnan](https://www.cse.iitb.ac.in/~ganesh/) and [Prof. Soumen Chakrabarti](https://www.cse.iitb.ac.in/~soumen/) for my undergraduate thesis.
 
-### Bibliography
+### Selected Publications
 {% for item in site.data.bibliography %}
-{%- include bib-row.liquid %}
+{% if item.selected %}
+{% include bib-row.liquid %}
+{% endif %}
+{% endfor %}
+
+### Publications
+{% for item in site.data.bibliography %}
+{% include bib-row.liquid %}
 {% endfor %}

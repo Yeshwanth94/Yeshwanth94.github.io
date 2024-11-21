@@ -1,31 +1,26 @@
-**{{ item.title | strip }}**
-<br>
-{%- include author-names.liquid %}<br>
-    {% if item.under_prep %}
-    {{- "_Under Preparation_" -}}
-    {% elsif item.under_sub %}
-    {{- "_Under Submission_" -}}
-    {% elsif item.under_major_rev %}
-        {{- "_Under Major Revision_" -}}
-        <em>
-        {% if item.venue %}
-            {{- " at " -}}{{- item.venue | strip -}}
-        {% elsif item.abbr %}
-            {{- " at " -}}{{- item.abbr -}}
-        {% endif %}
-        </em>
-    {% endif %}
-
-{%- if item.abstract -%}
-<br>
-<a href="https://arxiv.org" class="arxiv-button-link" target="_blank">
-    <button class="abs-button"></button>
-</a>
+<div class="publication-item">
+<strong>{{ item.title }}</strong><br>
+{%- include author-names.liquid -%}<br>
+<em>
+{%- if item.under_prep %}{{- "Under Preparation" -}}<br>
+{% elsif item.under_sub %}{{- "Under Submission" -}}<br>
+{% elsif item.under_major_rev %}{{- "Under Major Revision" -}}
+{% if item.venue %}{{- " at " -}}{{- item.venue | strip -}}
+{% elsif item.abbr %}{{- " at " -}}{{- item.abbr -}}
 {% endif %}
+<br>
+{% endif %}
+</em>
 {%- if item.arxiv -%}
 <a href="https://arxiv.org" class="arxiv-button-link" target="_blank">
     <button class="arxiv-button"></button>
 </a>
 {% endif %}
-<br>
-<br>
+{%- if item.abstract -%}
+<button class="show-abstract-btn"></button>
+<div class="abstract-content" style="display: none;">
+  <p>"OK"</p>
+</div>
+{% endif %}
+</div>
+<p></p>

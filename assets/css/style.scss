@@ -335,7 +335,6 @@ footer {
 }
 
 .arxiv-button {
-  background-color: #c9c8c8;
   border-radius: 5px;
   background-color: #fff;
   border: 1px solid #6d6d6d;
@@ -350,13 +349,11 @@ footer {
   }
 
   &:hover {
-    color: rgb(56, 43, 107);
-    font-weight: bold;
+    background-color: #e3e3e3;
   }
 }
 
-.abs-button {
-  background-color: #c9c8c8;
+.show-abstract-btn {
   border-radius: 5px;
   background-color: #fff;
   border: 1px solid #6d6d6d;
@@ -367,11 +364,23 @@ footer {
   width: 4rem;
 
   &::before {
-    content: "ABS"; // Specifies the text to be inserted
+    content: "ABS";
   }
 
   &:hover {
-    color: rgb(56, 43, 107);
-    font-weight: bold;
+    background-color: #e3e3e3;
   }
+}
+
+.abstract-content {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.spaced-break {
+  display: block;
+  height: 10px; /* Adjust the height as needed */
 }
