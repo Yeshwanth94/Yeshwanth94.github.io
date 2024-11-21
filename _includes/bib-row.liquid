@@ -1,7 +1,10 @@
 <div class="publication-item">
 <strong>{{ item.title }}</strong><br>
+<div class="author-names">{% if item.authors %}
+{{- item.authors -}}<br>
+{% else %}
 {%- include author-names.liquid -%}<br>
-<em>
+{% endif %}</div><em>
 {%- if item.under_prep %}{{- "Under Preparation" -}}<br>
 {% elsif item.under_sub %}{{- "Under Submission" -}}<br>
 {% elsif item.under_major_rev %}{{- "Under Major Revision" -}}
@@ -19,7 +22,7 @@
 {%- if item.abstract -%}
 <button class="show-abstract-btn"></button>
 <div class="abstract-content" style="display: none;">
-  <p>"OK"</p>
+  {{ item.abstract }}
 </div>
 {% endif %}
 </div>

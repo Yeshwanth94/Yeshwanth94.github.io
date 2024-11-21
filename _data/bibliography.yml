@@ -14,15 +14,7 @@
 
 - id: "cherapanamjeri2025are"
   title: "Are Pairwise Comparisions Enough for Preference Learning?"
-  author:
-    - family: "Cherapanamjeri*"
-      given: "Yeshwanth"
-    - family: "Daskalakis"
-      given: "Constantinos"
-    - family: "Farina"
-      given: "Gabriele"
-    - family: "Mohammadpour*"
-      given: "Sobhan"
+  authors: "Yeshwanth Cherapanamjeri*, Constantinos Daskalakis, Gabriele Farina, Sobhan Mohammadpour*"
   under_prep: true
   selected: true
 
@@ -58,7 +50,27 @@
   selected: true
   under_major_rev: true
   arxiv: "2310.10758"
-  abstract: "I know a republican"
+  abstract:
+    "We investigate the quantitative performance of affine-equivariant estimators
+    for robust mean estimation. As a natural stability requirement, the
+    construction of such affine-equivariant estimators has been extensively studied
+    in the statistics literature. We quantitatively evaluate these estimators under
+    two outlier models which have been the subject of much recent work: the
+    heavy-tailed and adversarial corruption settings. We establish lower bounds
+    which show that affine-equivariance induces a strict degradation in recovery
+    error with quantitative rates degrading by a factor of \\(\\sqrt{d}\\) in both
+    settings. We find that classical estimators such as the Tukey median (Tukey
+    '75) and Stahel-Donoho estimator (Stahel '81 and Donoho '82) are either
+    quantitatively sub-optimal even within the class of affine-equivariant
+    estimators or lack any quantitative guarantees. On the other hand, recent
+    estimators with strong quantitative guarantees are not affine-equivariant or
+    require additional distributional assumptions to achieve it. We remedy this by
+    constructing a new affine-equivariant estimator which nearly matches our lower
+    bound. Our estimator is based on a novel notion of a high-dimensional median
+    which may be of independent interest. Notably, our results are applicable more
+    broadly to any estimator whose performance is evaluated in the Mahalanobis norm
+    which, for affine-equivariant estimators, corresponds to an evaluation in
+    Euclidean norm on isotropic distributions."
 
 - id: chen2025statistical
   author:
@@ -71,4 +83,5 @@
   selected: true
   under_major_rev: true
   arxiv: "2310.10758"
-  abstract: "I know a republican"
+  abstract: "I *know* a **republican**
+    - The People's Court"

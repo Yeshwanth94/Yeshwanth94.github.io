@@ -1,0 +1,5 @@
+{% for item in site.data.bibliography %}
+{% if item.selected %}
+{% include bib-row.liquid %}
+{% endif %}
+{% endfor %}
