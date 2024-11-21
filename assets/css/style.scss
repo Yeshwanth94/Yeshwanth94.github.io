@@ -18,7 +18,11 @@ body {
   font-weight: 400;
 }
 
-h1,
+h1 {
+  color: #222;
+  margin: 0px 0px 2px;
+}
+
 h2,
 h3,
 h4,
@@ -56,6 +60,14 @@ h4,
 h5,
 h6 {
   color: #494949;
+}
+
+h1 + p {
+  font-style: italic;
+  color: gray;
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-left: 4.5px;
 }
 
 a {
@@ -398,7 +410,25 @@ footer {
   // background-color: #fff93de7;
   // background-color: rgb(255, 255, 223);
   background-color: rgba(198, 14, 60, 0.203);
-  width: fit-content;
+  // width: fit-content;
+  width: 5rem;
   color: #212121;
   padding: 1px 5px 1px 5px;
+  text-align: center;
+}
+
+/* Adjust size of icons */
+i.fas,
+i.fab,
+i.ai {
+  font-size: 50px; /* Adjust size */
+  color: rgb(198, 14, 60); /* Change color */
+  margin-right: 5px; /* Space between icons */
+}
+
+/* Hover effect for icons */
+i.fas:hover,
+i.fab:hover,
+i.ai:hover {
+  color: rgb(56, 43, 107);
 }

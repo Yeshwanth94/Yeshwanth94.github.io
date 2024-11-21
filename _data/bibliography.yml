@@ -271,6 +271,7 @@
   paper_type: "Extended Abstract"
   venue: "Twenty Third Conference on Economics and Computation"
   abbr: "EC"
+  year: 2022
   arxiv: "2205.02060"
   selected: true
   abstract:
@@ -355,6 +356,7 @@
   authors: "Peter L. Bartlett, S&eacute;bastien Bubeck, Yeshwanth Cherapanamjeri"
   venue: "Thirty Fifth Conference on Neural Information Processing Systems"
   abbr: "NeurIPS"
+  year: 2021
   arxiv: "2106.12611"
   note: "Spotlight Presentation"
   abstract:
