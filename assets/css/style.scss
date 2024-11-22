@@ -93,7 +93,7 @@ a:hover small {
 }
 
 .wrapper {
-  width: 900px;
+  width: 890px;
   margin: 0 auto;
 }
 
@@ -236,7 +236,7 @@ strong {
 }
 
 section {
-  width: 520px;
+  width: 510px;
   float: right;
   padding-bottom: 50px;
 }
@@ -405,16 +405,14 @@ footer {
 
 .abbr {
   font-family: "Roboto", sans-serif;
+  border-radius: 1px;
   font-size: 12px;
-  // font-weight: 600;
-  // background-color: #fff93de7;
-  // background-color: rgb(255, 255, 223);
   background-color: rgba(198, 14, 60, 0.203);
-  // width: fit-content;
   width: 5rem;
   color: #212121;
   padding: 1px 5px 1px 5px;
   text-align: center;
+  display: inline-block;
 }
 
 /* Adjust size of icons */

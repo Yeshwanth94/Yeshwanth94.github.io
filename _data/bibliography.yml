@@ -333,7 +333,7 @@
     variance of the data-generating distribution does not exist. Concretely, given
     a sample \\(\\mathbf{X} = \\{X_i\\}_{i = 1}^n\\ \\) from a distribution \\(\\mathcal{D}\\ \\)
     over \\(\\mathbb{R}^d\\ \\) with mean \\(\\mu\\ \\) which satisfies the following
-    <em>weak-moment</em> assumption for some \\({\alpha \\in [0, 1]}\\): $$
+    <em>weak-moment</em> assumption for some \\({\\alpha \\in [0, 1]}\\): $$
     \\forall \\|v\\| = 1: \\mathbb{E}_{X \\thicksim \\mathcal{D}}[\\lvert \\langle X - \\mu,
     v\\rangle \\rvert^{1 + \\alpha}] \\leq 1, $$
     and given a target
