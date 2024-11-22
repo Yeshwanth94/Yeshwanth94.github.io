@@ -7,13 +7,7 @@
 {% endif %}<em>
 {%- if item.under_prep %}{{- "Under Preparation" -}}<br>
 {% elsif item.under_sub %}{{- "Under Submission" -}}<br>
-{% elsif item.under_major_rev %}{{- "Under Major Revision" -}}
-{% if item.venue %}{{- " at " -}}{{- item.venue | strip -}}
-{% elsif item.abbr %}{{- " at " -}}{{- item.abbr -}}
-{% endif %}
-<br>
-{% comment %} {% else %}
-{{- item.venue -}}<br> {% endcomment %}
+{% elsif item.under_major_rev %}{{- "Under Major Revision" -}}<br>
 {% endif %}
 </em>
 {% if item.note %}

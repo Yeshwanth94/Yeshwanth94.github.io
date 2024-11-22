@@ -8,5 +8,8 @@ Before this, I'd spent two wonderful years as a research fellow in the Machine L
 ### Selected Publications
 {% include selected-publications.liquid %}
 
-### Publications
+<h3 class="collapsible-heading">Publications <span class="arrow"></span></h3>
+<div class="collapsible-content">
 {% include publications.liquid %}
+</div>
+

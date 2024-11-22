@@ -408,7 +408,7 @@ footer {
   border-radius: 1px;
   font-size: 12px;
   background-color: rgba(198, 14, 60, 0.203);
-  width: 5rem;
+  min-width: 5rem;
   color: #212121;
   padding: 1px 5px 1px 5px;
   text-align: center;
@@ -429,4 +429,40 @@ i.fas:hover,
 i.fab:hover,
 i.ai:hover {
   color: rgb(56, 43, 107);
+}
+
+.collapsible-heading {
+  cursor: pointer;
+  padding: 7px;
+  display: flex; /* Enable Flexbox */
+  justify-content: space-between; /* Space between text and arrow */
+  align-items: center; /* Center align vertically */
+  border: 1px solid #ccccccc4;
+  border-radius: 5px;
+}
+
+.collapsible-heading.active {
+  border: none;
+}
+
+.arrow {
+  transition: transform 0.5s ease; /* Smooth rotation animation */
+  font-size: 0.8em;
+}
+
+.arrow::before {
+  content: "\25BC"; /* Unicode for ▼ */
+}
+
+.collapsible-heading.active .arrow {
+  transform: rotate(180deg); /* Rotate arrow when active */
+}
+
+.collapsible-content {
+  display: none; /* Hidden by default */
+  margin-top: 5px;
+}
+
+.collapsible-content.show {
+  display: block; /* Show when toggled */
 }
