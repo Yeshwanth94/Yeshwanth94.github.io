@@ -344,7 +344,7 @@
     subsequent work has led to computationally efficient versions of this
     estimator. Here, we study the case of general \\(\\alpha\\), and establish the
     following information-theoretic lower bound on the optimal attainable
-    confidence interval: $$ \\Omega \\left(\\sqrt{\frac{d}{n}} +
+    confidence interval: $$ \\Omega \\left(\\sqrt{\\frac{d}{n}} +
     \\left(\\frac{d}{n}\\right)^{\\frac{\\alpha}{(1 + \\alpha)}} + \\left(\\frac{\\log 1 /
     \\delta}{n}\\right)^{\\frac{\\alpha}{(1 + \\alpha)}}\\right). $$
 
