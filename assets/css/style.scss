@@ -3,8 +3,6 @@
 
 @import "{{ site.theme }}";
 
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
 body {
   background-color: #fff;
   padding: 50px;
@@ -70,6 +68,42 @@ h1 + p {
   margin-left: 4.5px;
 }
 
+.collapsible-heading {
+  cursor: pointer;
+  padding: 7px;
+  display: flex; /* Enable Flexbox */
+  justify-content: space-between; /* Space between text and arrow */
+  align-items: center; /* Center align vertically */
+  border: 1px solid #ccccccc4;
+  border-radius: 5px;
+}
+
+.collapsible-heading.active {
+  border: none;
+}
+
+.arrow {
+  transition: transform 0.5s ease; /* Smooth rotation animation */
+  font-size: 0.8em;
+}
+
+.arrow::before {
+  content: "\25BC"; /* Unicode for ▼ */
+}
+
+.collapsible-heading.active .arrow {
+  transform: rotate(180deg); /* Rotate arrow when active */
+}
+
+.collapsible-content {
+  display: none; /* Hidden by default */
+  margin-top: 5px;
+}
+
+.collapsible-content.show {
+  display: block; /* Show when toggled */
+}
+
 a {
   color: rgb(198, 14, 60);
   text-decoration: none;
@@ -93,7 +127,7 @@ a:hover small {
 }
 
 .wrapper {
-  width: 890px;
+  width: 880px;
   margin: 0 auto;
 }
 
@@ -168,7 +202,7 @@ kbd {
 }
 
 header {
-  width: 350px;
+  width: 330px;
   float: left;
   position: fixed;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -404,7 +438,8 @@ footer {
 }
 
 .abbr {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
   border-radius: 1px;
   font-size: 12px;
   background-color: rgba(198, 14, 60, 0.203);
@@ -429,40 +464,4 @@ i.fas:hover,
 i.fab:hover,
 i.ai:hover {
   color: rgb(56, 43, 107);
-}
-
-.collapsible-heading {
-  cursor: pointer;
-  padding: 7px;
-  display: flex; /* Enable Flexbox */
-  justify-content: space-between; /* Space between text and arrow */
-  align-items: center; /* Center align vertically */
-  border: 1px solid #ccccccc4;
-  border-radius: 5px;
-}
-
-.collapsible-heading.active {
-  border: none;
-}
-
-.arrow {
-  transition: transform 0.5s ease; /* Smooth rotation animation */
-  font-size: 0.8em;
-}
-
-.arrow::before {
-  content: "\25BC"; /* Unicode for ▼ */
-}
-
-.collapsible-heading.active .arrow {
-  transform: rotate(180deg); /* Rotate arrow when active */
-}
-
-.collapsible-content {
-  display: none; /* Hidden by default */
-  margin-top: 5px;
-}
-
-.collapsible-content.show {
-  display: block; /* Show when toggled */
 }

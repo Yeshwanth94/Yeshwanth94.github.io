@@ -1,6 +1,12 @@
 theme: jekyll-theme-minimal
+
 title: Yeshwanth Cherapanamjeri
+tagline: "Postdoc &bull; [CSAIL](https://www.csail.mit.edu) &bull; [MIT](https://www.mit.edu)"
 logo: /assets/prof_pic.jpg
-github:
-  is_project_page: false
 email: yeshwanth@berkeley.edu
+resume: resume.pdf # Checks within /assets/pdfs
+scholar_id: IKRu39AAAAAJ
+
+collapse_publications: true # Make other publications section collapsible; default: false
+other_publications: true # Exclude selected publications; default: false
+

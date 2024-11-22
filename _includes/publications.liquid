@@ -1,3 +1,9 @@
 {% for item in site.data.bibliography %}
+{% if item.selected %}
+{% unless site.other_publications %}
 {% include bib-row.liquid %}
+{% endunless %}
+{% else %}
+{% include bib-row.liquid %}
+{% endif %}
 {% endfor %}

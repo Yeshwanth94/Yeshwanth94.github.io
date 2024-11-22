@@ -1,15 +1,17 @@
-Postdoc &bull; [CSAIL](https://www.csail.mit.edu) &bull; [MIT](https://www.mit.edu)
-
-I am a postdoc at MIT where I am mentored by [Costis Daskalakis](https://people.csail.mit.edu/costis/). I obtained my Ph.D at UC Berkeley where I was fortunate to be advised by [Peter Bartlett](https://www.stat.berkeley.edu/~bartlett/). I'm broadly interested in algorithmic and statistical issues arising in machine learning. 
-
-Before this, I'd spent two wonderful years as a research fellow in the Machine Learning & Optimization group at Microsoft Research, India, where I was fortunate to work with [Prateek Jain](https://www.prateekjain.org), [Praneeth Netrapalli](https://praneethnetrapalli.org/) and [Nagarajan Natarajan](https://www.microsoft.com/en-us/research/people/nagarajn/) on designing provable algorithms for non-convex optimization. Previously, I received a B. Tech in Computer Science from IIT Bombay where I worked on Entity Linking and Disambiguation with [Prof. Ganesh Ramakrishnan](https://www.cse.iitb.ac.in/~ganesh/) and [Prof. Soumen Chakrabarti](https://www.cse.iitb.ac.in/~soumen/) for my undergraduate thesis.
+{% include about_me.md %}
 
 
 ### Selected Publications
 {% include selected-publications.liquid %}
 
-<h3 class="collapsible-heading">Publications <span class="arrow"></span></h3>
+{% if site.collapse_publications %}
+<h3 class="collapsible-heading">
+{% if site.other_publications %} More {% else %} All {% endif %}Publications <span class="arrow"></span></h3>
 <div class="collapsible-content">
 {% include publications.liquid %}
 </div>
+{% else %}
+### Publications
+{% include publications.liquid %}
+{% endif %}
 
