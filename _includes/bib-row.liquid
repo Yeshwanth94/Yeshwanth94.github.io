@@ -19,7 +19,7 @@
 {% endif %}</div>
 {%- if item.abbr -%}{% unless item.under_major_rev %}<div class="abbr">{{- item.abbr -}}{% if item.year %}{{" "}}{{- item.year -}}{% endif %}</div>{% endunless %}{% endif %}
 {%- if item.arxiv -%}
-<a href="http://arxiv.org/abs/{{ item.arxiv }}" class="arxiv-button-link">
+<a href="http://arxiv.org/abs/{{ item.arxiv }}" target="_blank" class="arxiv-button-link">
     <button class="arxiv-button"></button>
 </a>
 {% endif %}
