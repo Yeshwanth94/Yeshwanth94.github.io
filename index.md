@@ -14,4 +14,3 @@
 ### Publications
 {% include publications.liquid %}
 {% endif %}
-
