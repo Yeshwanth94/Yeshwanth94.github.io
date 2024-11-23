@@ -3,28 +3,27 @@
 
 @import "{{ site.theme }}";
 
-
 @font-face {
-  font-family: 'Roboto Mono';
-  src: url('/assets/fonts/Roboto Mono/RobotoMono-VariableFont_wght.ttf') format('truetype');
+  font-family: "Roboto Mono";
+  src: url("/assets/fonts/Roboto Mono/RobotoMono-VariableFont_wght.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto Mono';
-  src: url('/assets/fonts/Roboto Mono/RobotoMono-Italic-VariableFont_wght.ttf') format('truetype');
+  font-family: "Roboto Mono";
+  src: url("/assets/fonts/Roboto Mono/RobotoMono-Italic-VariableFont_wght.ttf") format("truetype");
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Roboto Condensed';
-  src: url('/assets/fonts/Roboto Condensed/RobotoCondensed-VariableFont_wght.ttf') format('truetype');
+  font-family: "Roboto Condensed";
+  src: url("/assets/fonts/Roboto Condensed/RobotoCondensed-VariableFont_wght.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto Condensed';
-  src: url('/assets/fonts/Roboto Condensed/RobotoCondensed-Italic-VariableFont_wght.ttf') format('truetype');
+  font-family: "Roboto Condensed";
+  src: url("/assets/fonts/Roboto Condensed/RobotoCondensed-Italic-VariableFont_wght.ttf") format("truetype");
   font-style: italic;
 }
 
@@ -353,6 +352,13 @@ footer {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
+@media screen and (max-width: 2000px) {
+  .wrapper {
+    width: 75%; /* Full width for the wrapper */
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   header {
     position: static; /* Removes fixed position for stacking */
@@ -366,4 +372,3 @@ footer {
     margin-left: 0; /* Remove offset for the header */
   }
 }
-
