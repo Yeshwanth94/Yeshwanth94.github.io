@@ -5,7 +5,7 @@
 
 body {
   background-color: #fff;
-  padding: 50px;
+  // padding: 50px;
   font:
     16px/1.5 "Noto Sans",
     "Helvetica Neue",
@@ -259,12 +259,12 @@ hr {
 }
 
 .author-names {
-  font-size: 12px;
+  font-size: 0.7rem;
   color: #353535;
 }
 
 .note {
-  font-size: 13px;
+  font-size: 0.85rem;
   // color: #353535;
 }
 
@@ -302,7 +302,7 @@ i.ai:hover {
 }
 
 header {
-  width: 330px; /* Fixed max width for header */
+  width: 280px; /* Fixed max width for header */
   float: left;
   position: fixed; /* Keeps header fixed on the left */
   margin-right: 20px; /* Adds consistent gap between header and content */
@@ -310,113 +310,126 @@ header {
 }
 
 .wrapper {
-  max-width: 100%; /* Full width for the wrapper */
+  width: 65%; /* Full width for the wrapper */
   margin: 0 auto;
 }
 
 section {
-  max-width: calc(100% - 350px); /* 330px for header + 20px gap */
-  margin-left: 350px; /* Account for header width and gap */
+  width: calc(100% - 300px); /* 330px for header + 20px gap */
+  margin-left: 300px; /* Account for header width and gap */
 }
 
 footer {
-  // width: 270px;
   float: left;
   position: fixed;
   bottom: 0px;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-@media print, screen and (max-width: 960px) {
-  div.wrapper {
-    width: 100%;
-    margin: 0;
-  }
-
-  footer {
-    float: none;
-    position: static;
-    width: 100%;
-  }
-
-  .wrapper {
-    width: auto;
-    margin: 0;
-  }
-
+@media screen and (max-width: 960px) {
   header {
-    width: 100%; /* Full width for the header */
-    float: none; /* Disable float to stack vertically */
-    position: static; /* No fixed positioning */
-    margin-right: 0; /* Remove the gap for horizontal layout */
+    position: static; /* Removes fixed position for stacking */
+    float: none; /* Stops floating the header */
+    width: 100%; /* Full width in a vertical layout */
+    margin-right: 0;
   }
 
   section {
-    width: 100%; /* Ensure section spans the full width */
-    margin-left: 0; /* Remove left margin */
-    float: none; /* Disable float for stacking */
-    padding: 20px; /* Optional: Add padding for better readability */
-  }
-
-  header a small {
-    display: inline;
-  }
-
-  header ul {
-    position: absolute;
-    right: 50px;
-    top: 52px;
+    width: 100%; /* Full width for the section */
+    margin-left: 0; /* Remove offset for the header */
   }
 }
 
-@media print, screen and (max-width: 720px) {
-  body {
-    word-wrap: break-word;
-  }
+// @media print, screen and (max-width: 960px) {
+//   div.wrapper {
+//     width: 100%;
+//     margin: 0;
+//   }
 
-  header {
-    width: auto;
-    padding: 0;
-  }
+//   footer {
+//     float: none;
+//     position: static;
+//     width: 100%;
+//   }
 
-  section {
-    width: 100%;
-  }
+//   .wrapper {
+//     width: auto;
+//     margin: 0;
+//   }
 
-  header ul,
-  header p.view {
-    position: static;
-  }
+//   header {
+//     width: 100%; /* Full width for the header */
+//     float: none; /* Disable float to stack vertically */
+//     position: static; /* No fixed positioning */
+//     margin-right: 0; /* Remove the gap for horizontal layout */
+//   }
 
-  pre,
-  code {
-    word-wrap: normal;
-  }
-}
+//   section {
+//     width: 100%; /* Ensure section spans the full width */
+//     margin-left: 0; /* Remove left margin */
+//     float: none; /* Disable float for stacking */
+//     padding: 20px; /* Optional: Add padding for better readability */
+//   }
 
-@media print, screen and (max-width: 480px) {
-  body {
-    padding: 15px;
-  }
+//   header a small {
+//     display: inline;
+//   }
 
-  header {
-    width: auto;
-  }
+//   header ul {
+//     position: absolute;
+//     right: 50px;
+//     top: 52px;
+//   }
+// }
 
-  .downloads {
-    width: 99%;
-  }
+// @media print, screen and (max-width: 720px) {
+//   body {
+//     word-wrap: break-word;
+//   }
 
-  .downloads li,
-  .downloads li + li + li {
-    width: 33%;
-  }
-}
+//   header {
+//     width: auto;
+//     padding: 0;
+//   }
 
-@media print {
-  body {
-    padding: 0.4in;
-    font-size: 12pt;
-    color: #444;
-  }
-}
+//   section {
+//     width: 100%;
+//   }
+
+//   header ul,
+//   header p.view {
+//     position: static;
+//   }
+
+//   pre,
+//   code {
+//     word-wrap: normal;
+//   }
+// }
+
+// @media print, screen and (max-width: 480px) {
+//   body {
+//     padding: 15px;
+//   }
+
+//   header {
+//     width: auto;
+//   }
+
+//   .downloads {
+//     width: 99%;
+//   }
+
+//   .downloads li,
+//   .downloads li + li + li {
+//     width: 33%;
+//   }
+// }
+
+// @media print {
+//   body {
+//     padding: 0.4in;
+//     font-size: 12pt;
+//     color: #444;
+//   }
+// }
