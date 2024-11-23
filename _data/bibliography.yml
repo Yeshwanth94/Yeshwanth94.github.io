@@ -114,7 +114,7 @@
     convergence principle limits its applicability to more general learning
     settings such as multiclass classification. In this paper, we address this
     issue by providing optimal high probability risk bounds through a framework
-    that surpasses the limitations of uniform convergence arguments.<br>
+    that surpasses the limitations of uniform convergence arguments.<br><br>
 
     Our framework converts the leave-one-out error of permutation invariant
     predictors into high probability risk bounds. As an application, by adapting
@@ -122,7 +122,7 @@
     propose an algorithm that achieves an optimal PAC bound for binary
     classification. Specifically, our result shows that certain aggregations of
     one-inclusion graph algorithms are optimal, addressing a variant of a classic
-    question posed by Warmuth.<br>
+    question posed by Warmuth.<br><br>
 
     We further instantiate our framework in three settings where uniform
     convergence is provably suboptimal. For multiclass classification, we prove an
@@ -154,7 +154,7 @@
     graph algorithm whose high probability risk bound cannot go beyond that implied
     by Markov's inequality. Our construction of these poorly performing
     one-inclusion graph algorithms uses Varshamov-Tenengolts error correcting
-    codes.<br>
+    codes.<br><br>
 
     Our negative result has several implications. First, it shows that the same
     poor high-probability performance is inherited by several recent prediction
@@ -181,7 +181,7 @@
     nonzero entries of \\(\\mathbf{A}\\). In this paper, we show that beyond the time
     required to read the input matrix, these fundamental linear algebra problems
     can be solved in \\(d^{\\omega}\\ \\) time, i.e., where \\(\\omega \\approx 2.37\\ \\) is the
-    current matrix-multiplication exponent.<br>
+    current matrix-multiplication exponent.<br><br>
 
     To do so, we introduce a constant-factor subspace embedding with the optimal
     \\(m=\\mathcal{O}(d)\\ \\) number of rows, and which can be applied in time
@@ -249,7 +249,7 @@
     unknown-index self-selection, it is not. Self-selection has a long history in
     Econometrics and applications in various theoretical and applied fields,
     including treatment effect estimation, imitation learning, learning from
-    strategically reported data, and learning from markets at disequilibrium.<br>
+    strategically reported data, and learning from markets at disequilibrium.<br><br>
 
     In this work, we present the first computationally and statistically
     efficient estimation algorithms for the most standard setting of this problem
@@ -337,8 +337,7 @@
     <em>weak-moment</em> assumption for some \\({\\alpha \\in [0, 1]}\\): $$
     \\forall \\|v\\| = 1: \\mathbb{E}_{X \\thicksim \\mathcal{D}}[\\lvert \\langle X - \\mu,
     v\\rangle \\rvert^{1 + \\alpha}] \\leq 1, $$
-    and given a target
-    failure probability, \\(\\delta\\ \\), our goal is to design an estimator which attains
+    and given a target failure probability, \\(\\delta\\ \\), our goal is to design an estimator which attains
     the smallest possible confidence interval as a function of \\(n,d,\\delta\\). For
     the specific case of \\(\\alpha = 1\\), foundational work of Lugosi and Mendelson
     exhibits an estimator achieving subgaussian confidence intervals, and
@@ -452,7 +451,8 @@
     d))\\), much faster than the naive \\(\\Theta(nd)\\ \\) time obtained from a linear scan
     in the case of \\(n\\ \\) and \\(d\\ \\) very large. Here \\(\\tilde O\\ \\) hides
     \\(\\log(nd/\\epsilon)\\ \\) factors. We discuss applications to nearest neighbor search
-    and nonparametric estimation.<br>
+    and nonparametric estimation.<br><br>
+
     Our method is simple and likely to be applicable to other domains: we
     describe a generic approach for transforming randomized Monte Carlo data
     structures which do not support adaptive queries to ones that do, and show that
@@ -503,7 +503,7 @@
     in the absence of Gaussian assumptions on the underlying distributions of
     samples, making assumptions instead about only finitely-many moments. We focus
     on how many samples are needed to do estimation and regression with high
-    accuracy and exponentially-good success probability.<br>
+    accuracy and exponentially-good success probability.<br><br>
 
     For covariance estimation, linear regression, and several other problems,
     estimators have recently been constructed with sample complexities and rates of
@@ -562,7 +562,7 @@
     suitably defined. In recent work by Daskalakis, Dikkala and Gravin, 2018, it
     was shown that it is possible to distinguish between the two cases provided the
     length of the observed trajectory is at least super-linear in the hitting time
-    of \\(P\\ \\) which may be arbitrarily large.
+    of \\(P\\ \\) which may be arbitrarily large.<br><br>
     In this paper, we propose an algorithm that avoids this dependence on hitting
     time thus enabling efficient testing of markov chains even in cases where it is
     infeasible to observe every state in the chain. Our algorithm is based on
@@ -586,7 +586,7 @@
     results are quite weak in the presence of noise, other results have runtime
     quadratic in dimension, rendering them impractical for large scale
     applications.
-    <br>
+    <br><br>
     In this work, we provide a novel thresholding based iterative algorithm with
     per-iteration complexity at most linear in the data size. Moreover, the
     fraction of outliers, \\(\\alpha\\), that our method can handle is tight up to
