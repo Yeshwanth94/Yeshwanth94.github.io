@@ -269,12 +269,12 @@
 - id: "cherapanamjeri2022estimation"
   title: "Estimation of Standard Auction Models"
   authors: "Yeshwanth Cherapanamjeri, Constantinos Daskalakis, Andrew Ilyas, Manolis Zampetakis"
-  paper_type: "Extended Abstract"
   venue: "Twenty Third Conference on Economics and Computation"
   abbr: "EC"
   year: 2022
   arxiv: "2205.02060"
   selected: true
+  note: "Extended Abstract"
   abstract:
     "We provide efficient estimation methods for first- and second-price auctions
     under independent (asymmetric) private values and partial observability. Given

@@ -7,7 +7,7 @@ body {
   background-color: #fff;
   padding: 50px;
   font:
-    14px/1.5 "Noto Sans",
+    16px/1.5 "Noto Sans",
     "Helvetica Neue",
     Helvetica,
     Arial,
@@ -27,7 +27,6 @@ h4,
 h5,
 h6 {
   color: #1b1b1b;
-  margin: 30px 0 30px;
 }
 
 p,
@@ -51,13 +50,6 @@ h1 {
 
 h2 {
   color: #393939;
-}
-
-h3,
-h4,
-h5,
-h6 {
-  color: #494949;
 }
 
 h1 + p {
@@ -124,14 +116,6 @@ a small {
 
 a:hover small {
   color: #777;
-}
-
-.wrapper {
-  max-width: 100%; // Allow it to span the screen
-  width: 90%; // Adjust width to prevent extreme stretching
-  margin: 0 auto; // Center the container
-  // width: 900px;
-  // margin: 0 auto;
 }
 
 blockquote {
@@ -204,81 +188,9 @@ kbd {
   vertical-align: middle;
 }
 
-header {
-  max-width: 100%; // Allow it to span the screen
-  width: 30%; // Adjust width to prevent extreme stretching
-  float: left;
-  position: fixed;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-
-ul.downloads {
-  list-style: none;
-  height: 40px;
-  padding: 0;
-  background: #f4f4f4;
-  border-radius: 5px;
-  border: 1px solid #e0e0e0;
-  width: 270px;
-}
-
-.downloads li {
-  width: 89px;
-  float: left;
-  border-right: 1px solid #e0e0e0;
-  height: 40px;
-}
-
-.downloads li:first-child a {
-  border-radius: 5px 0 0 5px;
-}
-
-.downloads li:last-child a {
-  border-radius: 0 5px 5px 0;
-}
-
-.downloads a {
-  line-height: 1;
-  font-size: 11px;
-  color: #676767;
-  display: block;
-  text-align: center;
-  padding-top: 6px;
-  height: 34px;
-}
-
-.downloads a:hover,
-.downloads a:focus {
-  color: #675c5c;
-  font-weight: bold;
-}
-
-.downloads ul a:active {
-  background-color: #f0f0f0;
-}
-
 strong {
   color: #101010;
   font-weight: 500;
-}
-
-.downloads li + li + li {
-  border-right: none;
-  width: 89px;
-}
-
-.downloads a strong {
-  font-size: 14px;
-  display: block;
-  color: #222;
-}
-
-section {
-  max-width: 100%; // Allow it to span the screen
-  width: 60%; // Adjust width to prevent extreme stretching
-  margin: 0 auto;
-  float: right;
-  padding-bottom: 50px;
 }
 
 small {
@@ -292,98 +204,9 @@ hr {
   margin: 0 0 20px;
 }
 
-footer {
-  width: 270px;
-  float: left;
-  position: fixed;
-  bottom: 0px;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-
 .email {
   text-align: center;
   font-family: "Roboto Mono", monospace;
-}
-
-@media print, screen and (max-width: 960px) {
-  div.wrapper {
-    width: auto;
-    margin: 0;
-  }
-
-  header,
-  section,
-  footer {
-    float: none;
-    position: static;
-    width: auto;
-  }
-
-  header {
-    max-width: 30%; // Allow it to span the screen
-    width: 90%; // Adjust width to prevent extreme stretching
-    padding-right: 320px;
-  }
-
-  section {
-    border: 1px solid #e5e5e5;
-    border-width: 1px 0;
-    padding: 20px 0;
-    margin: 0 0 20px;
-  }
-
-  header a small {
-    display: inline;
-  }
-
-  header ul {
-    position: absolute;
-    right: 50px;
-    top: 52px;
-  }
-}
-
-@media print, screen and (max-width: 720px) {
-  body {
-    word-wrap: break-word;
-  }
-
-  header {
-    padding: 0;
-  }
-
-  header ul,
-  header p.view {
-    position: static;
-  }
-
-  pre,
-  code {
-    word-wrap: normal;
-  }
-}
-
-@media print, screen and (max-width: 480px) {
-  body {
-    padding: 15px;
-  }
-
-  .downloads {
-    width: 99%;
-  }
-
-  .downloads li,
-  .downloads li + li + li {
-    width: 33%;
-  }
-}
-
-@media print {
-  body {
-    padding: 0.4in;
-    font-size: 12pt;
-    color: #444;
-  }
 }
 
 .arxiv-button {
@@ -476,4 +299,124 @@ i.fas:hover,
 i.fab:hover,
 i.ai:hover {
   color: rgb(56, 43, 107);
+}
+
+header {
+  width: 330px; /* Fixed max width for header */
+  float: left;
+  position: fixed; /* Keeps header fixed on the left */
+  margin-right: 20px; /* Adds consistent gap between header and content */
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.wrapper {
+  max-width: 100%; /* Full width for the wrapper */
+  margin: 0 auto;
+}
+
+section {
+  max-width: calc(100% - 350px); /* 330px for header + 20px gap */
+  margin-left: 350px; /* Account for header width and gap */
+}
+
+footer {
+  // width: 270px;
+  float: left;
+  position: fixed;
+  bottom: 0px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+@media print, screen and (max-width: 960px) {
+  div.wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  footer {
+    float: none;
+    position: static;
+    width: 100%;
+  }
+
+  .wrapper {
+    width: auto;
+    margin: 0;
+  }
+
+  header {
+    width: 100%; /* Full width for the header */
+    float: none; /* Disable float to stack vertically */
+    position: static; /* No fixed positioning */
+    margin-right: 0; /* Remove the gap for horizontal layout */
+  }
+
+  section {
+    width: 100%; /* Ensure section spans the full width */
+    margin-left: 0; /* Remove left margin */
+    float: none; /* Disable float for stacking */
+    padding: 20px; /* Optional: Add padding for better readability */
+  }
+
+  header a small {
+    display: inline;
+  }
+
+  header ul {
+    position: absolute;
+    right: 50px;
+    top: 52px;
+  }
+}
+
+@media print, screen and (max-width: 720px) {
+  body {
+    word-wrap: break-word;
+  }
+
+  header {
+    width: auto;
+    padding: 0;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  header ul,
+  header p.view {
+    position: static;
+  }
+
+  pre,
+  code {
+    word-wrap: normal;
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+
+  header {
+    width: auto;
+  }
+
+  .downloads {
+    width: 99%;
+  }
+
+  .downloads li,
+  .downloads li + li + li {
+    width: 33%;
+  }
+}
+
+@media print {
+  body {
+    padding: 0.4in;
+    font-size: 12pt;
+    color: #444;
+  }
 }
