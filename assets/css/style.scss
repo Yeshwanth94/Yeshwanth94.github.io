@@ -236,7 +236,8 @@ hr {
   text-shadow: none;
   color: rgb(198, 14, 23);
   width: 4rem;
-  font-family: "Roboto Condensed", monospace;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.9rem;
 
   &::before {
     content: "arXiv"; // Specifies the text to be inserted
@@ -256,7 +257,8 @@ hr {
   text-shadow: none;
   color: rgb(198, 14, 23);
   width: 4rem;
-  font-family: "Roboto Consensed", monospace;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.9rem;
 
   &::before {
     content: "ABS";
@@ -286,7 +288,7 @@ div.author-names {
 }
 
 .mjx-chtml {
-  font-size: 0.8rem !important;
+  font-size: 0.9rem !important;
 }
 
 .abbr {

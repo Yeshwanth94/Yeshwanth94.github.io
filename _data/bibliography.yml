@@ -10,12 +10,21 @@
   title: "How Much is a Noisy Image Worth? Data Scaling Laws for Ambient Diffusion"
   authors: "Giannis Daras*, Yeshwanth Cherapanamjeri*, Constantinos Daskalakis"
   under_sub: true
+  arxiv: "2411.02780"
   selected: true
+  abstract: "The quality of generative models depends on the quality of the data they are trained on. Creating large-scale, high-quality datasets is often expensive and sometimes impossible, e.g. in certain scientific applications where there is no access to clean data due to physical or instrumentation constraints. Ambient Diffusion and related frameworks train diffusion models with solely corrupted data (which are usually cheaper to acquire) but ambient models significantly underperform models trained on clean data. We study this phenomenon at scale by training more than \\(80\\)  models on data with different corruption levels across three datasets ranging from \\(30,000\\) to \\(\\approx 1.3\\)M samples. We show that it is impossible, at these sample sizes, to match the performance of models trained on clean data when only training on noisy data. Yet, a combination of a small set of clean data (e.g.~\\(10\\%\\) of the total dataset) and a large set of highly noisy data suffices to reach the performance of models trained solely on similar-size datasets of clean data, and in particular to achieve near state-of-the-art performance. We provide theoretical evidence for our findings by developing novel sample complexity bounds for learning from Gaussian Mixtures with heterogeneous variances. Our theoretical model suggests that, for large enough datasets, the effective marginal utility of a noisy sample is exponentially worse than that of a clean sample. Providing a small set of clean samples can significantly reduce the sample size requirements for noisy data, as we also observe in our experiments."
 
 - id: "cherapanamjeri2025heavy"
   authors: "Yeshwanth Cherapanamjeri, Daniel Lee"
-  title: "Heavy-tailed Estimation is Easier than Adversarial Contamination"
+  title: "Heavy-tailed Contamination is Easier than Adversarial Contamination"
   under_sub: true
+
+- id: cherapanamjeri2024computing
+  title: "Computing Approximate Centerpoints in Polynomial Time"
+  authors: "Yeshwanth Cherapanamjeri"
+  venue: "Sixty Fifth Symposium on Foundations of Computer Science"
+  abbr: "FOCS"
+  year: 2024
 
 - id: chen2025statistical
   authors: "Zihao Chen, Yeshwanth Cherapanamjeri"
@@ -56,13 +65,6 @@
   title: "Efficient Automated Circuit Discovery in Transformers using Contextual Decomposition"
   authors: "Aliyah R. Hsu, G. Zhou, Yeshwanth Cherapanamjeri, Y. Huang, A. Odisho, P. Carroll, B. Yu"
   under_sub: true
-
-- id: cherapanamjeri2024computing
-  title: "Computing Approximate Centerpoints in Polynomial Time"
-  authors: "Yeshwanth Cherapanamjeri"
-  venue: "Sixty Fifth Symposium on Foundations of Computer Science"
-  abbr: "FOCS"
-  year: 2024
 
 - id: hsu2024diagnosing
   title: "Diagnosing Transformers: Illuminating Feature Spaces for Clinical Decision-Making"
@@ -105,6 +107,7 @@
   abbr: "FOCS"
   year: 2023
   arxiv: 2304.09167
+  selected: true
   note: "Invited to SICOMP Special Issue for FOCS 2023"
   abstract:
     "In statistical learning theory, determining the sample complexity of
@@ -274,7 +277,7 @@
   year: 2022
   arxiv: "2205.02060"
   selected: true
-  note: "Extended Abstract"
+  paper_type: "Extended Abstract"
   abstract:
     "We provide efficient estimation methods for first- and second-price auctions
     under independent (asymmetric) private values and partial observability. Given
@@ -322,35 +325,6 @@
     over previous work by the authors. We believe our general inequality is likely
     to find use in other applications."
 
-- id: "cherapanamjeri2022optimal"
-  title: "Optimal Mean Estimation without a Variance"
-  authors: "Yeshwanth Cherapanamjeri, Nilesh Tripuraneni, Peter L. Bartlett, Michael I. Jordan"
-  venue: "Thirty Fifth Conference on Learning Theory"
-  abbr: "COLT"
-  year: 2022
-  arxiv: "2011.12433"
-  abstract:
-    "We study the problem of heavy-tailed mean estimation in settings where the
-    variance of the data-generating distribution does not exist. Concretely, given
-    a sample \\(\\mathbf{X} = \\{X_i\\}_{i = 1}^n\\ \\) from a distribution \\(\\mathcal{D}\\ \\)
-    over \\(\\mathbb{R}^d\\ \\) with mean \\(\\mu\\ \\) which satisfies the following
-    <em>weak-moment</em> assumption for some \\({\\alpha \\in [0, 1]}\\): $$
-    \\forall \\|v\\| = 1: \\mathbb{E}_{X \\thicksim \\mathcal{D}}[\\lvert \\langle X - \\mu,
-    v\\rangle \\rvert^{1 + \\alpha}] \\leq 1, $$
-    and given a target failure probability, \\(\\delta\\ \\), our goal is to design an estimator which attains
-    the smallest possible confidence interval as a function of \\(n,d,\\delta\\). For
-    the specific case of \\(\\alpha = 1\\), foundational work of Lugosi and Mendelson
-    exhibits an estimator achieving subgaussian confidence intervals, and
-    subsequent work has led to computationally efficient versions of this
-    estimator. Here, we study the case of general \\(\\alpha\\), and establish the
-    following information-theoretic lower bound on the optimal attainable
-    confidence interval: $$ \\Omega \\left(\\sqrt{\\frac{d}{n}} +
-    \\left(\\frac{d}{n}\\right)^{\\frac{\\alpha}{(1 + \\alpha)}} + \\left(\\frac{\\log 1 /
-    \\delta}{n}\\right)^{\\frac{\\alpha}{(1 + \\alpha)}}\\right). $$
-
-    Moreover, we devise a computationally-efficient estimator which achieves this
-    lower bound."
-
 - id: "cherapanamjeri2021adversarial"
   title: "Adversarial Examples in Multi-Layer Random ReLU Networks"
   authors: "Peter L. Bartlett, S&eacute;bastien Bubeck, Yeshwanth Cherapanamjeri"
@@ -358,7 +332,6 @@
   abbr: "NeurIPS"
   year: 2021
   arxiv: "2106.12611"
-  note: "Spotlight Presentation"
   abstract:
     "We consider the phenomenon of adversarial examples in ReLU networks with
     independent gaussian parameters. For networks of constant depth and with a
@@ -376,8 +349,8 @@
     probability, compute a function that is close to constant."
 
 - id: "bubeck2021single"
-  title: "A Single Gradient Step Finds Adversarial Examples on Random Two-Layers Neural Networks"
-  authors: "S&eacute;bastien Bubeck, Yeshwanth Cherapanamjeri, Gauthier Gidel, Remi Tachet des Combes"
+  title: "A single gradient step finds adversarial examples on random two-layers neural networks"
+  authors: "S&eacute;bastien Bubeck, Yeshwanth Cherapanamjeri, Gauthier Gidel, R&eacute;mi Tachet des Combes"
   venue: "Thirty Fifth Conference on Neural Information Processing Systems"
   abbr: "NeurIPS"
   year: 2021
@@ -460,6 +433,13 @@
     \\(\\ell_p\\ \\) norm estimation with negligible overhead in query time and a factor
     \\(d\\ \\) overhead in memory."
 
+- id: "cherapanamjeri2020optimal"
+  title: "Optimal Robust Linear Regression in Nearly Linear Time"
+  authors: "Yeshwanth Cherapanamjeri, Efe Aras, Nilesh Tripuraneni, Michael I. Jordan, Nicolas Flammarion, Peter L. Bartlett"
+  under_sub: true
+  arxiv: "2007.08137"
+  abstract: "We study the problem of high-dimensional robust linear regression where a learner is given access to \\(n\\) samples from the generative model \\(Y = \\langle X,w^* \\rangle + \\epsilon\\) (with \\(X \\in \\mathbb{R}^d\\) and \\(\\epsilon\\) independent), in which an \\(\eta\\) fraction of the samples have been adversarially corrupted. We propose estimators for this problem under two settings: (i) \\(X\\) is L4-L2 hypercontractive, \\(\\mathbb{E} [XX^\\top]\\) has bounded condition number and \\(\\epsilon\\) has bounded variance and (ii) \\(X\\) is sub-Gaussian with identity second moment and \\(\\epsilon\\) is sub-Gaussian. In both settings, our estimators: (a) Achieve optimal sample complexities and recovery guarantees up to log factors and (b) Run in near linear time (\\(\\tilde{O}(nd / \\eta^6)\\)). Prior to our work, polynomial time algorithms achieving near optimal sample complexities were only known in the setting where \\(X\\) is Gaussian with identity covariance and \\(\\epsilon\\) is Gaussian, and no linear time estimators were known for robust linear regression in any setting. Our estimators and their analysis leverage recent developments in the construction of faster algorithms for robust mean estimation to improve runtimes, and refined concentration of measure arguments alongside Gaussian rounding techniques to improve statistical sample complexities."
+
 - id: "cherapanamjeri2020list"
   title: "List Decodable Mean Estimation in Nearly Linear Time"
   authors: "Yeshwanth Cherapanamjeri, Sidhanth Mohanty, Morris Yau"
@@ -489,6 +469,35 @@
     saddle-point optimization for which we design custom primal dual solvers for
     generalized packing and covering SDP's under Ky-Fan norms, which may be of
     independent interest."
+
+- id: "cherapanamjeri2022optimal"
+  title: "Optimal Mean Estimation without a Variance"
+  authors: "Yeshwanth Cherapanamjeri, Nilesh Tripuraneni, Peter L. Bartlett, Michael I. Jordan"
+  venue: "Thirty Fifth Conference on Learning Theory"
+  abbr: "COLT"
+  year: 2022
+  arxiv: "2011.12433"
+  abstract:
+    "We study the problem of heavy-tailed mean estimation in settings where the
+    variance of the data-generating distribution does not exist. Concretely, given
+    a sample \\(\\mathbf{X} = \\{X_i\\}_{i = 1}^n\\ \\) from a distribution \\(\\mathcal{D}\\ \\)
+    over \\(\\mathbb{R}^d\\ \\) with mean \\(\\mu\\ \\) which satisfies the following
+    <em>weak-moment</em> assumption for some \\({\\alpha \\in [0, 1]}\\): $$
+    \\forall \\|v\\| = 1: \\mathbb{E}_{X \\thicksim \\mathcal{D}}[\\lvert \\langle X - \\mu,
+    v\\rangle \\rvert^{1 + \\alpha}] \\leq 1, $$
+    and given a target failure probability, \\(\\delta\\ \\), our goal is to design an estimator which attains
+    the smallest possible confidence interval as a function of \\(n,d,\\delta\\). For
+    the specific case of \\(\\alpha = 1\\), foundational work of Lugosi and Mendelson
+    exhibits an estimator achieving subgaussian confidence intervals, and
+    subsequent work has led to computationally efficient versions of this
+    estimator. Here, we study the case of general \\(\\alpha\\), and establish the
+    following information-theoretic lower bound on the optimal attainable
+    confidence interval: $$ \\Omega \\left(\\sqrt{\\frac{d}{n}} +
+    \\left(\\frac{d}{n}\\right)^{\\frac{\\alpha}{(1 + \\alpha)}} + \\left(\\frac{\\log 1 /
+    \\delta}{n}\\right)^{\\frac{\\alpha}{(1 + \\alpha)}}\\right). $$
+
+    Moreover, we devise a computationally-efficient estimator which achieves this
+    lower bound."
 
 - id: "cherapanamjeri2020algorithms"
   title: "Algorithms for Heavy-Tailed Statistics: Regression, Covariance Estimation, and Beyond"
@@ -570,7 +579,7 @@
     spectral analysis of markov chains."
 
 - id: "cherapanamjeri2017thresholding"
-  title: "Thresholding Based Outlier Robust PCA"
+  title: "Thresholding based Efficient Outlier Robust PCA"
   authors: "Yeshwanth Cherapanamjeri, Prateek Jain, Praneeth Netrapalli"
   venue: "Thirtieth Conference on Learning Theory"
   abbr: "COLT"
