@@ -1,42 +1,72 @@
 // document.addEventListener("DOMContentLoaded", function () {
 //     document.body.addEventListener('click', function (event) {
-//         if (event.target && event.target.classList.contains('show-footnote-trigger')) {
-//             console.log('Button clicked', event.target);
+//         const clickedElement = event.target;
 
-//             // Find the next sibling element, skip over any non-element nodes
-//             let footnote = event.target.nextElementSibling;
+//         // Find the footnote content that corresponds to the clicked trigger
+//         const footnote = document.querySelector('.footnote-content.visible');
+
+//         // If the clicked element is the footnote trigger
+//         if (clickedElement && clickedElement.classList.contains('show-footnote-trigger')) {
+//             console.log('Button clicked', clickedElement);
+
+//             // Find the next sibling element (the footnote content)
+//             let footnote = clickedElement.nextElementSibling;
 
 //             // Skip over non-element nodes (like text nodes or spaces)
 //             while (footnote && footnote.nodeType !== 1) {
 //                 footnote = footnote.nextElementSibling;
 //             }
 
-//             console.log('Found footnote:', footnote); // Log the abstract content
+//             console.log('Found footnote:', footnote);
 
-//             // Check if the abstract was found
+//             // Check if the footnote was found
 //             if (footnote) {
-//                 // Toggle visibility of the abstract content
-//                 if (footnote.style.display === 'none' || footnote.style.display === '') {
-//                     footnote.style.display = 'block';
-//                     // event.target.textContent = 'Hide Abstract';
-//                 } else {
+//                 // Toggle the visibility of the footnote
+//                 if (footnote.style.display === 'block' || footnote.classList.contains('visible')) {
+//                     footnote.classList.remove('visible');
 //                     footnote.style.display = 'none';
-//                     // event.target.textContent = 'Show Abstract';
+//                 } else {
+//                     footnote.classList.add('visible');
+//                     footnote.style.display = 'block';
+
+//                     // Get the position of the trigger
+//                     const rect = clickedElement.getBoundingClientRect();
+
+//                     // Adjust the position based on the page's scroll
+//                     const scrollOffset = window.scrollY || window.pageYOffset;
+
+//                     // Position the footnote above the trigger (adjust if needed)
+//                     footnote.style.top = `${rect.top + scrollOffset - footnote.offsetHeight - 5}px`; // Position it above the trigger
+//                     footnote.style.left = `${rect.left}px`; // Align it to the left of the trigger
 //                 }
 //             } else {
-//                 console.error('No abstract found for this button');
+//                 console.error('No footnote content found for this trigger');
 //             }
+
+//             // Stop propagation to prevent outside click detection when clicking on the trigger
+//             event.stopPropagation();
+//         } else if (footnote && !footnote.contains(clickedElement) && !clickedElement.classList.contains('show-footnote-trigger')) {
+//             // Close the footnote if the click is outside of the footnote or trigger
+//             footnote.classList.remove('visible');
+//             footnote.style.display = 'none';
 //         }
 //     });
 // });
 
-document.addEventListener("DOMContentLoaded", function () {
-    document.body.addEventListener('click', function (event) {
-        if (event.target && event.target.classList.contains('show-footnote-trigger')) {
-            console.log('Button clicked', event.target);
 
-            // Find the next sibling element, skip over any non-element nodes
-            let footnote = event.target.nextElementSibling;
+document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener('click', function (event) {
+        const clickedElement = event.target;
+
+        // Find the currently visible footnote content
+        const footnote = document.querySelector('.footnote-content.visible');
+
+        // If the clicked element is the footnote trigger
+        if (clickedElement && clickedElement.classList.contains('show-footnote-trigger')) {
+            console.log('Button clicked', clickedElement);
+
+            // Find the next sibling element (the footnote content)
+            let footnote = clickedElement.nextElementSibling;
 
             // Skip over non-element nodes (like text nodes or spaces)
             while (footnote && footnote.nodeType !== 1) {
@@ -47,25 +77,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Check if the footnote was found
             if (footnote) {
-                // If footnote is already visible, hide it
+                // Toggle the visibility of the footnote
                 if (footnote.style.display === 'block' || footnote.classList.contains('visible')) {
                     footnote.classList.remove('visible');
                     footnote.style.display = 'none';
                 } else {
-                    // Set footnote to visible and position it
                     footnote.classList.add('visible');
                     footnote.style.display = 'block';
 
                     // Get the position of the trigger
-                    const rect = event.target.getBoundingClientRect();
+                    const rect = clickedElement.getBoundingClientRect();
+
+                    // Adjust the position based on the page's scroll
+                    const scrollOffset = window.scrollY || window.pageYOffset;
 
                     // Position the footnote above the trigger (adjust if needed)
-                    footnote.style.top = `${rect.top - footnote.offsetHeight - 5}px`; // Position it above the trigger
+                    footnote.style.top = `${rect.top + scrollOffset - footnote.offsetHeight - 5}px`; // Position it above the trigger
                     footnote.style.left = `${rect.left}px`; // Align it to the left of the trigger
                 }
             } else {
                 console.error('No footnote content found for this trigger');
             }
+
+            // Stop propagation to prevent outside click detection when clicking on the trigger
+            event.stopPropagation();
+        } else if (footnote && !footnote.contains(clickedElement) && !clickedElement.classList.contains('show-footnote-trigger')) {
+            console.log('Clicked outside the footnote. Closing it.');
+            // Close the footnote if the click is outside of the footnote or trigger
+            footnote.classList.remove('visible');
+            footnote.style.display = 'none';
+        } else {
+            console.log('Click inside the footnote or on the trigger - no action taken.');
         }
     });
 });
