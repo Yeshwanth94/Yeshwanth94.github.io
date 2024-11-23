@@ -12,12 +12,12 @@ body {
     Helvetica,
     Arial,
     sans-serif;
-  color: #6d6d6d;
+  color: #222222;
   font-weight: 400;
 }
 
 h1 {
-  color: #222;
+  color: #080808;
   margin: 0px 0px 2px;
 }
 
@@ -26,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #222;
+  color: #1b1b1b;
   margin: 30px 0 30px;
 }
 
@@ -46,7 +46,7 @@ h3 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 2rem;
 }
 
 h2 {
@@ -62,7 +62,7 @@ h6 {
 
 h1 + p {
   font-style: italic;
-  color: gray;
+  // color: gray;
   font-size: 1.1em;
   font-weight: 400;
   margin-left: 4.5px;
@@ -105,7 +105,7 @@ h1 + p {
 }
 
 a {
-  color: rgb(198, 14, 60);
+  color: rgb(198, 14, 23);
   text-decoration: none;
 }
 
@@ -127,8 +127,11 @@ a:hover small {
 }
 
 .wrapper {
-  width: 880px;
-  margin: 0 auto;
+  max-width: 100%; // Allow it to span the screen
+  width: 90%; // Adjust width to prevent extreme stretching
+  margin: 0 auto; // Center the container
+  // width: 900px;
+  // margin: 0 auto;
 }
 
 blockquote {
@@ -202,7 +205,8 @@ kbd {
 }
 
 header {
-  width: 330px;
+  max-width: 100%; // Allow it to span the screen
+  width: 30%; // Adjust width to prevent extreme stretching
   float: left;
   position: fixed;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -254,7 +258,7 @@ ul.downloads {
 }
 
 strong {
-  color: #212121;
+  color: #101010;
   font-weight: 500;
 }
 
@@ -270,7 +274,9 @@ strong {
 }
 
 section {
-  width: 510px;
+  max-width: 100%; // Allow it to span the screen
+  width: 60%; // Adjust width to prevent extreme stretching
+  margin: 0 auto;
   float: right;
   padding-bottom: 50px;
 }
@@ -296,9 +302,7 @@ footer {
 
 .email {
   text-align: center;
-  font-family:
-    Roboto Mono,
-    monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -316,6 +320,8 @@ footer {
   }
 
   header {
+    max-width: 30%; // Allow it to span the screen
+    width: 90%; // Adjust width to prevent extreme stretching
     padding-right: 320px;
   }
 
@@ -387,7 +393,7 @@ footer {
   font-weight: 500;
   box-shadow: none;
   text-shadow: none;
-  color: rgb(183, 13, 56);
+  color: rgb(198, 14, 23);
   width: 4rem;
   font-family: "Roboto", sans-serif;
 
@@ -407,7 +413,7 @@ footer {
   font-weight: 500;
   box-shadow: none;
   text-shadow: none;
-  color: rgb(183, 13, 56);
+  color: rgb(198, 14, 23);
   width: 4rem;
   font-family: "Roboto", sans-serif;
 
@@ -430,7 +436,13 @@ footer {
 }
 
 .author-names {
+  font-size: 12px;
+  color: #353535;
+}
+
+.note {
   font-size: 13px;
+  // color: #353535;
 }
 
 .mjx-chtml {
@@ -442,7 +454,7 @@ footer {
   font-weight: 400;
   border-radius: 1px;
   font-size: 12px;
-  background-color: rgba(198, 14, 60, 0.203);
+  background-color: rgba(198, 14, 39, 0.203);
   min-width: 5rem;
   color: #212121;
   padding: 1px 5px 1px 5px;
@@ -455,7 +467,7 @@ i.fas,
 i.fab,
 i.ai {
   font-size: 50px; /* Adjust size */
-  color: rgb(198, 14, 60); /* Change color */
+  color: rgb(198, 14, 23);
   margin-right: 5px; /* Space between icons */
 }
 
