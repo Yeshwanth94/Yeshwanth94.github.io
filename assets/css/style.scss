@@ -277,13 +277,55 @@ hr {
   font-size: 13px;
 }
 
-div.author-names {
+.show-footnote-trigger {
+  box-shadow: none;
+  text-shadow: none;
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+
+  &:hover {
+    background-color: #e3e3e3;
+  }
+}
+
+.footnote-content {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 13px;
+  background: #f9f9f9; /* Background color for the popup */
+  color: #333; /* Text color */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default */
+  position: absolute; /* Position it absolutely */
+  z-index: 1000; /* Ensure it overlays content */
+  width: 30%;
+  white-space: normal; /* Enable text wrapping */
+  word-wrap: break-word; /* Break long words if necessary */
+  word-break: break-word; /* Ensure long unbreakable words break */
+  max-height: 30vh; /* Set a maximum height */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+}
+
+/* Optional: Add a smooth fade-in transition */
+.footnote-content {
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.footnote-content.visible {
+  opacity: 1;
+}
+
+.author-names {
   font-size: 13px !important;
   color: #838383;
 }
 
 .note {
-  font-size: 15px;
+  font-size: 0.9rem;
   // color: #353535;
 }
 
