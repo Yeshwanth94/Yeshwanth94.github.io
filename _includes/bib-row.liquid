@@ -4,7 +4,7 @@
 {{- item.authors -}}<br>
 {% else %}
 {%- include author-names.liquid -%}<br>
-{% endif %}</div><div class="note"><em>
+{% endif %}</div><div class="note">
 {%- if item.under_prep %}{{- "Under Preparation" -}}<br>
 {% elsif item.under_sub %}{{- "Under Submission" -}}<br>
 {% elsif item.under_major_rev %}{{- "Under Major Revision" -}}
@@ -13,7 +13,6 @@
 {% endif %}
 <br>
 {% endif %}
-</em>
 {% if item.note %}
 {{- item.note -}}<br>
 {% endif %}</div>
