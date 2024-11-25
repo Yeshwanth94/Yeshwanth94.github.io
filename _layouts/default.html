@@ -21,11 +21,11 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      <header id="header-content">
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
-
+        
         <center>
         {% if site.email %}
           <div class="email">
@@ -45,9 +45,11 @@
       </center>
       </header>
 
-      <section>     
+      <section id="section-content">
+        <div id="page-title">
       <h1>{{ site.title }}</h1>
       {% if site.tagline %}{{ site.tagline | markdownify }}{% endif %}
+    </div>     
       {{ content }}
       </section>
     </div>
@@ -58,6 +60,7 @@
     <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/collapsible.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/footnote.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/responsive-header.js" | relative_url }}"></script>
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function() {
         MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
