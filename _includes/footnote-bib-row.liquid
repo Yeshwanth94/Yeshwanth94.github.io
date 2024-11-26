@@ -1,4 +1,5 @@
-{% assign item = site.data.bibliography | where: "id", id | first %}<span class="footnote"><span class="show-footnote-trigger">{{ "[" }}{{ item.alpha_id }}{{ "]" }}</span><span class="footnote-content" style="display: none;">
+{% assign item = site.data.bibliography | where: "id", id | first %}<span class="footnote"><span class="show-footnote-trigger">{{ "[" }}{{- item.alpha_id -}}{{ "]" |  strip }}</span>
+<span class="footnote-content" style="display: none;">
 <span class="publication-item">
 <strong>{{- item.title -}}</strong><br>
 <span class="author-names">{% if item.authors %}

@@ -227,6 +227,11 @@ hr {
   font-family: "Roboto Mono", monospace;
 }
 
+.author-note {
+  font-size: 0.8rem;
+  color: #838383;
+}
+
 .arxiv-button {
   border-radius: 5px;
   background-color: #fff;
@@ -276,12 +281,23 @@ hr {
   font-size: 13px;
 }
 
+.footnote {
+  padding: 0;
+  margin: 0;
+  display: inline;
+  white-space: nowrap;
+  font-size: 0;
+}
+
 .show-footnote-trigger {
+  font-size: 1rem;
   box-shadow: none;
   text-shadow: none;
   cursor: pointer;
   color: rgb(9, 9, 173);
   text-decoration: underline;
+  margin: 0;
+  padding: 0;
 
   &:hover {
     background-color: #e3e3e3;
@@ -291,7 +307,7 @@ hr {
 .footnote-content {
   margin-top: 10px;
   padding: 10px;
-  font-size: 0.95em;
+  font-size: 0.9rem;
   background: #f9f9f9; /* Background color for the popup */
   color: #333; /* Text color */
   border: 1px solid #ccc;

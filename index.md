@@ -1,7 +1,7 @@
 {% include about_me.md %}
 
 
-### Selected Publications
+### Selected Publications <span class="author-note">* indicates equal contribution</span>
 {% include selected-publications.liquid %}
 
 {% if site.collapse_publications %}

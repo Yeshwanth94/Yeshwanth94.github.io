@@ -1,14 +1,14 @@
 # bibliography.yml
 
 - id: cherapanamjeri2025are
-  alpha_id: "CD+XX"
+  alpha_id: "CD+25"
   title: "Are Pairwise Comparisions Enough for Preference Learning?"
   authors: "Yeshwanth Cherapanamjeri*, Constantinos Daskalakis, Gabriele Farina, Sobhan Mohammadpour*"
   under_prep: true
   selected: true
 
 - id: daras2025how
-  alpha_id: "DC+XX"
+  alpha_id: "DC+24"
   title: "How Much is a Noisy Image Worth? Data Scaling Laws for Ambient Diffusion"
   authors: "Giannis Daras*, Yeshwanth Cherapanamjeri*, Constantinos Daskalakis"
   under_sub: true
@@ -29,7 +29,7 @@
   year: 2024
 
 - id: chen2025statistical
-  alpha_id: "CCXX"
+  alpha_id: "CC23"
   authors: "Zihao Chen, Yeshwanth Cherapanamjeri"
   title: "Statistical Barriers to Affine-equivariant Estimation"
   venue: "Annals of Statistics"
