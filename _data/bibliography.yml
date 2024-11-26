@@ -61,12 +61,12 @@
 
 - id: cherapanamjeri2025space
   title: "The Space Complexity of Learning-Unlearning Algorithms"
-  authors: "Yeshwanth Cherapanamjeri, S. Garg, N. Rajaraman, A. Sekhari, A. Shetty"
+  authors: "Yeshwanth Cherapanamjeri, Sumegha Garg, Nived Rajaraman, Ayush Sekhari, Abhishek Shetty"
   under_sub: true
 
 - id: hsu2025efficient
   title: "Efficient Automated Circuit Discovery in Transformers using Contextual Decomposition"
-  authors: "Aliyah R. Hsu, G. Zhou, Yeshwanth Cherapanamjeri, Y. Huang, A. Odisho, P. Carroll, B. Yu"
+  authors: "Aliyah R. Hsu, Georgia Zhou, Yeshwanth Cherapanamjeri, Yaxuan Huang, Anobel Odisho, Peter Carroll, Bin Yu"
   under_sub: true
 
 - id: hsu2024diagnosing
