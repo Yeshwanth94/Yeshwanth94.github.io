@@ -1,6 +1,6 @@
 I am a postdoc at MIT where I am fortunate to be mentored by [Costis Daskalakis](https://people.csail.mit.edu/costis/). I completed my Ph.D at U.C. Berkeley where I was adivsed by [Peter Bartlett](https://www.stat.berkeley.edu/~bartlett/). Previously, I spent two wonderful years at MSR Bangalore where I worked with [Prateek Jain](https://www.prateekjain.org), [Nagarajan Natarajan](https://www.microsoft.com/en-us/research/people/nagarajn/), and [Praneeth Netrapalli](https://praneethnetrapalli.org/). Previously, I was advised by [Ganesh Ramakrishnan](https://www.cse.iitb.ac.in/~ganesh/) and [Soumen Chakrabarti](https://www.cse.iitb.ac.in/~soumen/) for my undergraduate thesis at IIT Bombay. 
 
-**I am on the 2024-2025 academic job market**
+**I am on the 2024&ndash;25 academic job market**
 
 My research aims to build reliable machine learning algorithms which can cope with unprecendented challenges in the modern data production pipeline. Here are some directions that I am particularly excited about illustrating this theme:
 
