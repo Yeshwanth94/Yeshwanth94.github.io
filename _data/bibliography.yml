@@ -1,12 +1,14 @@
 # bibliography.yml
 
-- id: "cherapanamjeri2025are"
+- id: cherapanamjeri2025are
+  alpha_id: "CD+XX"
   title: "Are Pairwise Comparisions Enough for Preference Learning?"
   authors: "Yeshwanth Cherapanamjeri*, Constantinos Daskalakis, Gabriele Farina, Sobhan Mohammadpour*"
   under_prep: true
   selected: true
 
-- id: "daras2025how"
+- id: daras2025how
+  alpha_id: "DC+XX"
   title: "How Much is a Noisy Image Worth? Data Scaling Laws for Ambient Diffusion"
   authors: "Giannis Daras*, Yeshwanth Cherapanamjeri*, Constantinos Daskalakis"
   under_sub: true
@@ -14,7 +16,7 @@
   selected: true
   abstract: "The quality of generative models depends on the quality of the data they are trained on. Creating large-scale, high-quality datasets is often expensive and sometimes impossible, e.g. in certain scientific applications where there is no access to clean data due to physical or instrumentation constraints. Ambient Diffusion and related frameworks train diffusion models with solely corrupted data (which are usually cheaper to acquire) but ambient models significantly underperform models trained on clean data. We study this phenomenon at scale by training more than \\(80\\)  models on data with different corruption levels across three datasets ranging from \\(30,000\\) to \\(\\approx 1.3\\)M samples. We show that it is impossible, at these sample sizes, to match the performance of models trained on clean data when only training on noisy data. Yet, a combination of a small set of clean data (e.g.~\\(10\\%\\) of the total dataset) and a large set of highly noisy data suffices to reach the performance of models trained solely on similar-size datasets of clean data, and in particular to achieve near state-of-the-art performance. We provide theoretical evidence for our findings by developing novel sample complexity bounds for learning from Gaussian Mixtures with heterogeneous variances. Our theoretical model suggests that, for large enough datasets, the effective marginal utility of a noisy sample is exponentially worse than that of a clean sample. Providing a small set of clean samples can significantly reduce the sample size requirements for noisy data, as we also observe in our experiments."
 
-- id: "cherapanamjeri2025heavy"
+- id: cherapanamjeri2025heavy
   authors: "Yeshwanth Cherapanamjeri, Daniel Lee"
   title: "Heavy-tailed Contamination is Easier than Adversarial Contamination"
   under_sub: true
@@ -27,6 +29,7 @@
   year: 2024
 
 - id: chen2025statistical
+  alpha_id: "CCXX"
   authors: "Zihao Chen, Yeshwanth Cherapanamjeri"
   title: "Statistical Barriers to Affine-equivariant Estimation"
   venue: "Annals of Statistics"
@@ -100,7 +103,8 @@
     language models for other applications in medicine and in more critical
     domains."
 
-- id: "aden-ali2023optimal"
+- id: aden-ali2023optimal
+  alpha_id: "AC+23"
   authors: "Ishaq Aden-Ali, Yeshwanth Cherapanamjeri, Abhishek Shetty, Nikita Zhivotovskiy"
   title: "Optimal PAC Bounds without Uniform Convergence"
   venue: "Sixty Fourth Symposium on Foundations of Computer Science"
@@ -139,7 +143,7 @@
     standard uniform convergence-based results due to the smaller complexity
     measure in our risk bound."
 
-- id: "aden-ali2023one"
+- id: aden-ali2023one
   title: "The One-Inclusion Graph Algorithm is not Always Optimal"
   authors: "Ishaq Aden-Ali, Yeshwanth Cherapanamjeri, Abhishek Shetty, Nikita Zhivotovskiy"
   venue: "Thirty Sixth Conference on Learning Theory"
@@ -168,7 +172,7 @@
     boundedness of the binary loss for which arguments based on concentration
     inequalities often provide sharp high probability risk bounds."
 
-- id: "cherapanamjeri2023optimal"
+- id: cherapanamjeri2023optimal
   title: "Optimal Algorithms for Linear Algebra in the Current Matrix Multiplication Time"
   authors: "Yeshwanth Cherapanamjeri, Sandeep Silwal, David P. Woodruff, Samson Zhou"
   venue: "ACM-SIAM Symposium on Discrete Algorithms"
@@ -205,7 +209,7 @@
     subroutine that iteratively grows a set of independent rows, which may be of
     independent interest."
 
-- id: "cherapanamjeri2023robust"
+- id: cherapanamjeri2023robust
   title: "Robust Algorithms on Adaptive Inputs from Bounded Adversaries"
   authors: "Yeshwanth Cherapanamjeri, Sandeep Silwal, David P. Woodruff, Fred Zhang, Qiuyi Zhang, Samson Zhou"
   venue: "Eleventh International Conference on Learning Representations"
@@ -232,7 +236,8 @@
     unlimited number of adaptive queries for kernel density estimation. Finally, we
     complement our theoretical results with additional empirical evaluations."
 
-- id: "cherapanamjeri2023what"
+- id: cherapanamjeri2023what
+  alpha_id: "CD+23"
   title: "What Makes a Good Fisherman? Linear Regression under Self-Selection Bias"
   authors: "Yeshwanth Cherapanamjeri, Constantinos Daskalakis, Andrew Ilyas, Manolis Zampetakis"
   venue: "Fifty Fifth Symposium on Theory of Computing"
@@ -269,7 +274,8 @@
     algorithm for any error \\(\\varepsilon\\ \\) and poly\\((d, 1/\\varepsilon)\\ \\) sample and
     time complexity."
 
-- id: "cherapanamjeri2022estimation"
+- id: cherapanamjeri2022estimation
+  alpha_id: "CD+22"
   title: "Estimation of Standard Auction Models"
   authors: "Yeshwanth Cherapanamjeri, Constantinos Daskalakis, Andrew Ilyas, Manolis Zampetakis"
   venue: "Twenty Third Conference on Economics and Computation"
@@ -294,7 +300,8 @@
     theory. Finally, our results are immediately applicable to Dutch and English
     auctions."
 
-- id: "cherapanamjeri2022uniform"
+- id: cherapanamjeri2022uniform
+  alpha_id: "CN22"
   title: "Uniform Approximations for Randomized Hadamard Transforms with Applications"
   authors: "Yeshwanth Cherapanamjeri, Jelani Nelson"
   venue: "Fifty Fourth Symposium on Theory of Computing"
@@ -325,7 +332,7 @@
     over previous work by the authors. We believe our general inequality is likely
     to find use in other applications."
 
-- id: "cherapanamjeri2021adversarial"
+- id: cherapanamjeri2021adversarial
   title: "Adversarial Examples in Multi-Layer Random ReLU Networks"
   authors: "Peter L. Bartlett, S&eacute;bastien Bubeck, Yeshwanth Cherapanamjeri"
   venue: "Thirty Fifth Conference on Neural Information Processing Systems"
@@ -348,7 +355,7 @@
     this kind, because there are suitably deep networks that, with constant
     probability, compute a function that is close to constant."
 
-- id: "bubeck2021single"
+- id: bubeck2021single
   title: "A single gradient step finds adversarial examples on random two-layers neural networks"
   authors: "S&eacute;bastien Bubeck, Yeshwanth Cherapanamjeri, Gauthier Gidel, R&eacute;mi Tachet des Combes"
   venue: "Thirty Fifth Conference on Neural Information Processing Systems"
@@ -366,7 +373,8 @@
     single step of gradient descent suffices. We also show this result for any
     subexponential width random neural network with smooth activation function.'
 
-- id: "cherapanamjeri2021terminal"
+- id: cherapanamjeri2021terminal
+  alpha_id: "CN21"
   title: "Terminal Embeddings in Sublinear Time"
   authors: "Yeshwanth Cherapanamjeri, Jelani Nelson"
   venue: "Sixty Second Symposium on Foundations of Computer Science"
@@ -398,7 +406,8 @@
     (n^{1-\\Theta(\\epsilon^2)} + d)\\). To accomplish this, we leverage tools
     developed in the context of approximate nearest neighbor search."
 
-- id: "cherapanamjeri2020on"
+- id: cherapanamjeri2020on
+  alpha_id: "CN20"
   title: "On Adaptive Distance Estimation"
   authors: "Yeshwanth Cherapanamjeri, Jelani Nelson"
   venue: "Thirty Fourth Conference on Neural Information Processing Systems"
@@ -433,14 +442,16 @@
     \\(\\ell_p\\ \\) norm estimation with negligible overhead in query time and a factor
     \\(d\\ \\) overhead in memory."
 
-- id: "cherapanamjeri2020optimal"
+- id: cherapanamjeri2020optimal
+  alpha_id: "CA+20"
   title: "Optimal Robust Linear Regression in Nearly Linear Time"
   authors: "Yeshwanth Cherapanamjeri, Efe Aras, Nilesh Tripuraneni, Michael I. Jordan, Nicolas Flammarion, Peter L. Bartlett"
   under_sub: true
   arxiv: "2007.08137"
   abstract: "We study the problem of high-dimensional robust linear regression where a learner is given access to \\(n\\) samples from the generative model \\(Y = \\langle X,w^* \\rangle + \\epsilon\\) (with \\(X \\in \\mathbb{R}^d\\) and \\(\\epsilon\\) independent), in which an \\(\eta\\) fraction of the samples have been adversarially corrupted. We propose estimators for this problem under two settings: (i) \\(X\\) is L4-L2 hypercontractive, \\(\\mathbb{E} [XX^\\top]\\) has bounded condition number and \\(\\epsilon\\) has bounded variance and (ii) \\(X\\) is sub-Gaussian with identity second moment and \\(\\epsilon\\) is sub-Gaussian. In both settings, our estimators: (a) Achieve optimal sample complexities and recovery guarantees up to log factors and (b) Run in near linear time (\\(\\tilde{O}(nd / \\eta^6)\\)). Prior to our work, polynomial time algorithms achieving near optimal sample complexities were only known in the setting where \\(X\\) is Gaussian with identity covariance and \\(\\epsilon\\) is Gaussian, and no linear time estimators were known for robust linear regression in any setting. Our estimators and their analysis leverage recent developments in the construction of faster algorithms for robust mean estimation to improve runtimes, and refined concentration of measure arguments alongside Gaussian rounding techniques to improve statistical sample complexities."
 
-- id: "cherapanamjeri2020list"
+- id: cherapanamjeri2020list
+  alpha_id: "CM+20"
   title: "List Decodable Mean Estimation in Nearly Linear Time"
   authors: "Yeshwanth Cherapanamjeri, Sidhanth Mohanty, Morris Yau"
   venue: "Sixty First Symposium on Foundations of Computer Science"
@@ -470,7 +481,8 @@
     generalized packing and covering SDP's under Ky-Fan norms, which may be of
     independent interest."
 
-- id: "cherapanamjeri2022optimal"
+- id: cherapanamjeri2022optimal
+  alpha_id: "CT+22"
   title: "Optimal Mean Estimation without a Variance"
   authors: "Yeshwanth Cherapanamjeri, Nilesh Tripuraneni, Peter L. Bartlett, Michael I. Jordan"
   venue: "Thirty Fifth Conference on Learning Theory"
@@ -499,7 +511,8 @@
     Moreover, we devise a computationally-efficient estimator which achieves this
     lower bound."
 
-- id: "cherapanamjeri2020algorithms"
+- id: cherapanamjeri2020algorithms
+  alpha_id: "CH+20"
   title: "Algorithms for Heavy-Tailed Statistics: Regression, Covariance Estimation, and Beyond"
   authors: "Yeshwanth Cherapanamjeri, Samuel B. Hopkins, Tarun Kathuria, Prasad Raghavendra, Nilesh Tripuraneni"
   venue: "Fifty Second Symposium on Theory of Computing"
@@ -537,7 +550,8 @@
     preliminary evidence that improving these rates of error in polynomial time is
     not possible in the median of means framework our algorithms employ."
 
-- id: "cherapanamjeri2019fast"
+- id: cherapanamjeri2019fast
+  alpha_id: CF19
   title: "Fast Mean Estimation with Sub-Gaussian Rates"
   authors: "Yeshwanth Cherapanamjeri, Nicolas Flammarion, Peter L. Bartlett"
   venue: "Thirty Second Conference on Learning Theory"
@@ -556,7 +570,7 @@
     in this challenging setting, but it has a significantly faster runtime and a
     simpler analysis."
 
-- id: "cherapanamjeri2019testing"
+- id: cherapanamjeri2019testing
   title: "Testing Markov Chains Without Hitting"
   authors: "Yeshwanth Cherapanamjeri, Peter L. Bartlett"
   venue: "Thirty Second Conference on Learning Theory"
@@ -578,7 +592,7 @@
     combining classical ideas from approximation algorithms with techniques for the
     spectral analysis of markov chains."
 
-- id: "cherapanamjeri2017thresholding"
+- id: cherapanamjeri2017thresholding
   title: "Thresholding based Efficient Outlier Robust PCA"
   authors: "Yeshwanth Cherapanamjeri, Prateek Jain, Praneeth Netrapalli"
   venue: "Thirtieth Conference on Learning Theory"
@@ -606,7 +620,7 @@
     in recovery error (of the subspace) even in the presence of a large fraction of
     outliers."
 
-- id: "cherapanamjeri2017nearly"
+- id: cherapanamjeri2017nearly
   title: "Nearly Optimal Robust Matrix Completion"
   authors: "Yeshwanth Cherapanamjeri, Kartik Gupta, Prateek Jain"
   venue: "Thirty-Fourth International Conference on Machine Learning"
