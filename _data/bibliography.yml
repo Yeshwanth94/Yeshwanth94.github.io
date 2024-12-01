@@ -32,8 +32,7 @@
   alpha_id: "CC23"
   authors: "Zihao Chen, Yeshwanth Cherapanamjeri"
   title: "Statistical Barriers to Affine-equivariant Estimation"
-  venue: "Annals of Statistics"
-  abbr: "Annals of Statistics"
+  under_sub: true
   arxiv: "2310.10758"
   abstract:
     "We investigate the quantitative performance of affine-equivariant estimators
