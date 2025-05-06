@@ -21,7 +21,10 @@
 - id: cherapanamjeri2025heavy
   authors: "Yeshwanth Cherapanamjeri, Daniel Lee"
   title: "Heavy-tailed Contamination is Easier than Adversarial Contamination"
-  under_sub: true
+  venue: "Thirty Eighth Conference on Learning Theory"
+  abbr: "COLT"
+  year: 2025
+  arxiv: "2411.15306"
 
 - id: cherapanamjeri2024computing
   title: "Computing Approximate Centerpoints in Polynomial Time"
@@ -63,7 +66,9 @@
 - id: cherapanamjeri2025space
   title: "The Space Complexity of Learning-Unlearning Algorithms"
   authors: "Yeshwanth Cherapanamjeri, Sumegha Garg, Nived Rajaraman, Ayush Sekhari, Abhishek Shetty"
-  under_sub: true
+  venue: "Thirty Eighth Conference on Learning Theory"
+  abbr: "COLT"
+  year: 2025
 
 - id: hsu2025efficient
   title: "Efficient Automated Circuit Discovery in Transformers using Contextual Decomposition"
