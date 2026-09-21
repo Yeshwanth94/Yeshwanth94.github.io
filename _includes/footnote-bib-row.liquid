@@ -11,4 +11,4 @@
 {{ " at " }}{{ item.abbr }}
 {% endif %}<br>{% endif %}{% if item.note %}{{- item.note -}}<br>{% endif %}</span>
 {%- if item.abbr -%}{% unless item.under_major_rev %}<span class="abbr">{{- item.abbr -}}{% if item.year %}{{" "}}{{- item.year -}}{% endif %}</span>{% endunless %}{% endif %}
-{%- if item.arxiv -%}<a href="http://arxiv.org/abs/{{ item.arxiv }}" target="_blank" class="arxiv-button-link"><button class="arxiv-button"></button></a>{% endif %}</span></span></span>
+{%- if item.arxiv -%}<a href="https://arxiv.org/abs/{{ item.arxiv }}" target="_blank" class="arxiv-button-link"><button class="arxiv-button"></button></a>{% endif %}</span></span></span>

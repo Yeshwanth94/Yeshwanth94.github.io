@@ -2,9 +2,12 @@
 
 - id: cherapanamjeri2025are
   alpha_id: "CD+25"
-  title: "Are Pairwise Comparisions Enough for Preference Learning?"
+  title: "Learning Correlated Reward Models: Statistical Barriers and Opportunities"
   authors: "Yeshwanth Cherapanamjeri*, Constantinos Daskalakis, Gabriele Farina, Sobhan Mohammadpour*"
-  under_prep: true
+  venue: "Fourteenth International Conference on Learning Representations"
+  abbr: "ICLR"
+  year: 2026
+  arxiv: "2510.15839"
   selected: true
 
 - id: daras2025how
