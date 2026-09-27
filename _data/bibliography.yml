@@ -1,5 +1,43 @@
 # bibliography.yml
 
+- id: aden-ali2026phase
+  title: "Phase Transitions in Heavy-Tailed Mean Estimation under \\(\\ell_p\\) Norms"
+  authors: "Ishaq Aden-Ali, Yeshwanth Cherapanamjeri, Mikael Møller Høgsgaard, Kasper Green Larsen, Nikita Zhivotovskiy"
+  venue: "Fortieth Conference on Neural Information Processing Systems"
+  abbr: "NeurIPS"
+  year: 2026
+
+- id: chen2025statistical
+  alpha_id: "CC23"
+  authors: "Zihao Chen, Yeshwanth Cherapanamjeri"
+  title: "Statistical Limits of Affine Equivariant Estimation"
+  venue: "Fortieth Conference on Neural Information Processing Systems"
+  abbr: "NeurIPS"
+  year: 2026
+  arxiv: "2310.10758"
+  abstract:
+    "We investigate the quantitative performance of affine-equivariant estimators
+    for robust mean estimation. As a natural stability requirement, the
+    construction of such affine-equivariant estimators has been extensively studied
+    in the statistics literature. We quantitatively evaluate these estimators under
+    two outlier models which have been the subject of much recent work: the
+    heavy-tailed and adversarial corruption settings. We establish lower bounds
+    which show that affine-equivariance induces a strict degradation in recovery
+    error with quantitative rates degrading by a factor of \\(\\sqrt{d}\\) in both
+    settings. We find that classical estimators such as the Tukey median (Tukey
+    '75) and Stahel-Donoho estimator (Stahel '81 and Donoho '82) are either
+    quantitatively sub-optimal even within the class of affine-equivariant
+    estimators or lack any quantitative guarantees. On the other hand, recent
+    estimators with strong quantitative guarantees are not affine-equivariant or
+    require additional distributional assumptions to achieve it. We remedy this by
+    constructing a new affine-equivariant estimator which nearly matches our lower
+    bound. Our estimator is based on a novel notion of a high-dimensional median
+    which may be of independent interest. Notably, our results are applicable more
+    broadly to any estimator whose performance is evaluated in the Mahalanobis norm
+    which, for affine-equivariant estimators, corresponds to an evaluation in
+    Euclidean norm on isotropic distributions."
+  selected: true
+
 - id: cherapanamjeri2025are
   alpha_id: "CD+25"
   title: "Learning Correlated Reward Models: Statistical Barriers and Opportunities"
@@ -35,36 +73,6 @@
   venue: "Sixty Fifth Symposium on Foundations of Computer Science"
   abbr: "FOCS"
   year: 2024
-
-- id: chen2025statistical
-  alpha_id: "CC23"
-  authors: "Zihao Chen, Yeshwanth Cherapanamjeri"
-  title: "Statistical Barriers to Affine-equivariant Estimation"
-  under_sub: true
-  arxiv: "2310.10758"
-  abstract:
-    "We investigate the quantitative performance of affine-equivariant estimators
-    for robust mean estimation. As a natural stability requirement, the
-    construction of such affine-equivariant estimators has been extensively studied
-    in the statistics literature. We quantitatively evaluate these estimators under
-    two outlier models which have been the subject of much recent work: the
-    heavy-tailed and adversarial corruption settings. We establish lower bounds
-    which show that affine-equivariance induces a strict degradation in recovery
-    error with quantitative rates degrading by a factor of \\(\\sqrt{d}\\) in both
-    settings. We find that classical estimators such as the Tukey median (Tukey
-    '75) and Stahel-Donoho estimator (Stahel '81 and Donoho '82) are either
-    quantitatively sub-optimal even within the class of affine-equivariant
-    estimators or lack any quantitative guarantees. On the other hand, recent
-    estimators with strong quantitative guarantees are not affine-equivariant or
-    require additional distributional assumptions to achieve it. We remedy this by
-    constructing a new affine-equivariant estimator which nearly matches our lower
-    bound. Our estimator is based on a novel notion of a high-dimensional median
-    which may be of independent interest. Notably, our results are applicable more
-    broadly to any estimator whose performance is evaluated in the Mahalanobis norm
-    which, for affine-equivariant estimators, corresponds to an evaluation in
-    Euclidean norm on isotropic distributions."
-  selected: true
-  under_major_rev: true
 
 - id: cherapanamjeri2025space
   title: "The Space Complexity of Learning-Unlearning Algorithms"

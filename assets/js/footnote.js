@@ -37,7 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     // Position the footnote above the trigger (adjust if needed)
                     footnote.style.top = `${rect.top + scrollOffset - footnote.offsetHeight - 5}px`; // Position it above the trigger
-                    footnote.style.left = `${rect.left}px`; // Align it to the left of the trigger
+                    const maxLeft = document.documentElement.clientWidth - footnote.offsetWidth - 12;
+                    const left = Math.max(12, Math.min(rect.left, maxLeft));
+                    footnote.style.left = `${left + window.scrollX}px`; // Keep the popup inside the viewport
                 }
             } else {
                 console.error('No footnote content found for this trigger');
